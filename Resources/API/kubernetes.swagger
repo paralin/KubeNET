@@ -6503,13 +6503,6 @@
             "name": "name",
             "required": true,
             "type": "string"
-          },
-          {
-            "in": "path",
-            "description": "path to the resource",
-            "name": "path",
-            "required": true,
-            "type": "string"
           }
         ],
         "responses": {
@@ -6552,13 +6545,6 @@
             "in": "path",
             "description": "name of the Pod",
             "name": "name",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "path",
-            "description": "path to the resource",
-            "name": "path",
             "required": true,
             "type": "string"
           }
@@ -6605,13 +6591,6 @@
             "name": "name",
             "required": true,
             "type": "string"
-          },
-          {
-            "in": "path",
-            "description": "path to the resource",
-            "name": "path",
-            "required": true,
-            "type": "string"
           }
         ],
         "responses": {
@@ -6654,13 +6633,6 @@
             "in": "path",
             "description": "name of the Pod",
             "name": "name",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "path",
-            "description": "path to the resource",
-            "name": "path",
             "required": true,
             "type": "string"
           }
@@ -6707,13 +6679,6 @@
             "name": "name",
             "required": true,
             "type": "string"
-          },
-          {
-            "in": "path",
-            "description": "path to the resource",
-            "name": "path",
-            "required": true,
-            "type": "string"
           }
         ],
         "responses": {
@@ -6756,13 +6721,6 @@
             "in": "path",
             "description": "name of the Pod",
             "name": "name",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "path",
-            "description": "path to the resource",
-            "name": "path",
             "required": true,
             "type": "string"
           }
@@ -13634,7 +13592,8 @@
       }
     },
     "unversioned.Patch": {
-      "description": "Patch is provided to give a concrete name and type to the Kubernetes PATCH request body."
+      "description": "Patch is provided to give a concrete name and type to the Kubernetes PATCH request body.",
+      "properties": {}
     },
     "unversioned.Status": {
       "description": "Status is a return value for calls that don't return other objects.",
