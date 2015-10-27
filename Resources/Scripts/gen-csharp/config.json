@@ -1,0 +1,4 @@
+{
+  "packageName": "KubeNET.Swagger",
+  "packageVersion": "{{gitid}}"
+}
