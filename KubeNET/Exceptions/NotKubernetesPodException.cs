@@ -7,9 +7,6 @@ namespace KubeNET.Exceptions
 	/// </summary>
 	public class NotKubernetesPodException : Exception
 	{
-		public NotKubernetesPodException ()
-		{
-		}
 	}
 }
 

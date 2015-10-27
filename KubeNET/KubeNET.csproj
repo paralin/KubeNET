@@ -111,7 +111,6 @@
   <ItemGroup generatedimports="">
     <Compile Include="Exceptions\NotKubernetesPodException.cs" />
     <Compile Include="Kubernetes\KubernetesConfiguration.cs" />
-    <Compile Include="obj\Debug\.NETFramework,Version=v4.0.AssemblyAttribute.cs" />
     <Compile Include="Swagger\Api\VersionApi.cs" />
     <Compile Include="Swagger\Api\VApi.cs" />
     <Compile Include="Swagger\Api\ApiApi.cs" />
