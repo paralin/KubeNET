@@ -2,16 +2,16 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>KubeNET</id>
-        <version>0.0.1</version>
+        <version>0.1.0</version>
         <title>KubeNET</title>
         <authors>paralin</authors>
         <licenseUrl>https://github.com/paralin/KubeNET/blob/master/KubeNET/license.txt</licenseUrl>
         <projectUrl>https://github.com/paralin/KubeNET</projectUrl>
-        <iconUrl>https://raw.github.com/paralin/KubeNET/master/Resources/Misc/dota2_logo.jpg</iconUrl>
+        <iconUrl>https://raw.github.com/paralin/KubeNET/master/Resources/Misc/kube_logo.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>A .net client for the Kubernetes API.</description>
         <summary />
-        <releaseNotes>Release notes are available at https://github.com/paralin/KubeNET/releases/tag/KubeNET_0.0.1</releaseNotes>
+        <releaseNotes>Release notes are available at https://github.com/paralin/KubeNET/releases/tag/KubeNET_0.1.0</releaseNotes>
         <copyright />
         <tags>kube kubenet kubernetes client api</tags>
         <dependencies>
