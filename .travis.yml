@@ -1,0 +1,13 @@
+sudo: false
+language: csharp
+solution: KubeNET.sln
+
+install:
+  - nuget restore -NonInteractive
+
+script:
+  - xbuild /p:NoWarn=1584 KubeNET.sln
+
+cache:
+  directories:
+    - "~/.local/share/NuGet/Cache"
