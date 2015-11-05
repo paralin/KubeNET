@@ -7,7 +7,7 @@ MYPATH=`pwd`
 
 if [ ! -d swagger_codegen ]; then
   echo "Cloning swagger-codegen..."
-  git clone https://github.com/paralin/swagger-codegen.git swagger_codegen --depth=1
+  git clone https://github.com/swagger-api/swagger-codegen.git swagger_codegen --depth=1
   pushd swagger_codegen
   ./run-in-docker.sh mvn package
   popd

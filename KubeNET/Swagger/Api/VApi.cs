@@ -1460,9 +1460,10 @@ namespace KubeNET.Swagger.Api
         /// </remarks>
         /// <param name="_namespace">object name and auth scope, such as for teams and projects</param>
         /// <param name="name">name of the Pod</param>
+        /// <param name="path2">path to the resource</param>
         /// <param name="path">Path is the URL path to use for the current proxy request to pod.</param>
         /// <returns>string</returns>
-        string ConnectGetNamespacedPodProxy_1 (string _namespace, string name, string path);
+        string ConnectGetNamespacedPodProxy_1 (string _namespace, string name, string path2, string path);
   
         /// <summary>
         /// connect GET requests to proxy of Pod
@@ -1472,9 +1473,10 @@ namespace KubeNET.Swagger.Api
         /// </remarks>
         /// <param name="_namespace">object name and auth scope, such as for teams and projects</param>
         /// <param name="name">name of the Pod</param>
+        /// <param name="path2">path to the resource</param>
         /// <param name="path">Path is the URL path to use for the current proxy request to pod.</param>
         /// <returns>string</returns>
-        System.Threading.Tasks.Task<string> ConnectGetNamespacedPodProxy_1Async (string _namespace, string name, string path);
+        System.Threading.Tasks.Task<string> ConnectGetNamespacedPodProxy_1Async (string _namespace, string name, string path2, string path);
         
         /// <summary>
         /// connect HEAD requests to proxy of Pod
@@ -1484,9 +1486,10 @@ namespace KubeNET.Swagger.Api
         /// </remarks>
         /// <param name="_namespace">object name and auth scope, such as for teams and projects</param>
         /// <param name="name">name of the Pod</param>
+        /// <param name="path2">path to the resource</param>
         /// <param name="path">Path is the URL path to use for the current proxy request to pod.</param>
         /// <returns>string</returns>
-        string ConnectHeadNamespacedPodProxy_2 (string _namespace, string name, string path);
+        string ConnectHeadNamespacedPodProxy_2 (string _namespace, string name, string path2, string path);
   
         /// <summary>
         /// connect HEAD requests to proxy of Pod
@@ -1496,9 +1499,10 @@ namespace KubeNET.Swagger.Api
         /// </remarks>
         /// <param name="_namespace">object name and auth scope, such as for teams and projects</param>
         /// <param name="name">name of the Pod</param>
+        /// <param name="path2">path to the resource</param>
         /// <param name="path">Path is the URL path to use for the current proxy request to pod.</param>
         /// <returns>string</returns>
-        System.Threading.Tasks.Task<string> ConnectHeadNamespacedPodProxy_2Async (string _namespace, string name, string path);
+        System.Threading.Tasks.Task<string> ConnectHeadNamespacedPodProxy_2Async (string _namespace, string name, string path2, string path);
         
         /// <summary>
         /// connect PUT requests to proxy of Pod
@@ -1508,9 +1512,10 @@ namespace KubeNET.Swagger.Api
         /// </remarks>
         /// <param name="_namespace">object name and auth scope, such as for teams and projects</param>
         /// <param name="name">name of the Pod</param>
+        /// <param name="path2">path to the resource</param>
         /// <param name="path">Path is the URL path to use for the current proxy request to pod.</param>
         /// <returns>string</returns>
-        string ConnectPutNamespacedPodProxy_3 (string _namespace, string name, string path);
+        string ConnectPutNamespacedPodProxy_3 (string _namespace, string name, string path2, string path);
   
         /// <summary>
         /// connect PUT requests to proxy of Pod
@@ -1520,9 +1525,10 @@ namespace KubeNET.Swagger.Api
         /// </remarks>
         /// <param name="_namespace">object name and auth scope, such as for teams and projects</param>
         /// <param name="name">name of the Pod</param>
+        /// <param name="path2">path to the resource</param>
         /// <param name="path">Path is the URL path to use for the current proxy request to pod.</param>
         /// <returns>string</returns>
-        System.Threading.Tasks.Task<string> ConnectPutNamespacedPodProxy_3Async (string _namespace, string name, string path);
+        System.Threading.Tasks.Task<string> ConnectPutNamespacedPodProxy_3Async (string _namespace, string name, string path2, string path);
         
         /// <summary>
         /// connect POST requests to proxy of Pod
@@ -1532,9 +1538,10 @@ namespace KubeNET.Swagger.Api
         /// </remarks>
         /// <param name="_namespace">object name and auth scope, such as for teams and projects</param>
         /// <param name="name">name of the Pod</param>
+        /// <param name="path2">path to the resource</param>
         /// <param name="path">Path is the URL path to use for the current proxy request to pod.</param>
         /// <returns>string</returns>
-        string ConnectPostNamespacedPodProxy_4 (string _namespace, string name, string path);
+        string ConnectPostNamespacedPodProxy_4 (string _namespace, string name, string path2, string path);
   
         /// <summary>
         /// connect POST requests to proxy of Pod
@@ -1544,9 +1551,10 @@ namespace KubeNET.Swagger.Api
         /// </remarks>
         /// <param name="_namespace">object name and auth scope, such as for teams and projects</param>
         /// <param name="name">name of the Pod</param>
+        /// <param name="path2">path to the resource</param>
         /// <param name="path">Path is the URL path to use for the current proxy request to pod.</param>
         /// <returns>string</returns>
-        System.Threading.Tasks.Task<string> ConnectPostNamespacedPodProxy_4Async (string _namespace, string name, string path);
+        System.Threading.Tasks.Task<string> ConnectPostNamespacedPodProxy_4Async (string _namespace, string name, string path2, string path);
         
         /// <summary>
         /// connect DELETE requests to proxy of Pod
@@ -1556,9 +1564,10 @@ namespace KubeNET.Swagger.Api
         /// </remarks>
         /// <param name="_namespace">object name and auth scope, such as for teams and projects</param>
         /// <param name="name">name of the Pod</param>
+        /// <param name="path2">path to the resource</param>
         /// <param name="path">Path is the URL path to use for the current proxy request to pod.</param>
         /// <returns>string</returns>
-        string ConnectDeleteNamespacedPodProxy_5 (string _namespace, string name, string path);
+        string ConnectDeleteNamespacedPodProxy_5 (string _namespace, string name, string path2, string path);
   
         /// <summary>
         /// connect DELETE requests to proxy of Pod
@@ -1568,9 +1577,10 @@ namespace KubeNET.Swagger.Api
         /// </remarks>
         /// <param name="_namespace">object name and auth scope, such as for teams and projects</param>
         /// <param name="name">name of the Pod</param>
+        /// <param name="path2">path to the resource</param>
         /// <param name="path">Path is the URL path to use for the current proxy request to pod.</param>
         /// <returns>string</returns>
-        System.Threading.Tasks.Task<string> ConnectDeleteNamespacedPodProxy_5Async (string _namespace, string name, string path);
+        System.Threading.Tasks.Task<string> ConnectDeleteNamespacedPodProxy_5Async (string _namespace, string name, string path2, string path);
         
         /// <summary>
         /// connect OPTIONS requests to proxy of Pod
@@ -1580,9 +1590,10 @@ namespace KubeNET.Swagger.Api
         /// </remarks>
         /// <param name="_namespace">object name and auth scope, such as for teams and projects</param>
         /// <param name="name">name of the Pod</param>
+        /// <param name="path2">path to the resource</param>
         /// <param name="path">Path is the URL path to use for the current proxy request to pod.</param>
         /// <returns>string</returns>
-        string ConnectOptionsNamespacedPodProxy_6 (string _namespace, string name, string path);
+        string ConnectOptionsNamespacedPodProxy_6 (string _namespace, string name, string path2, string path);
   
         /// <summary>
         /// connect OPTIONS requests to proxy of Pod
@@ -1592,9 +1603,10 @@ namespace KubeNET.Swagger.Api
         /// </remarks>
         /// <param name="_namespace">object name and auth scope, such as for teams and projects</param>
         /// <param name="name">name of the Pod</param>
+        /// <param name="path2">path to the resource</param>
         /// <param name="path">Path is the URL path to use for the current proxy request to pod.</param>
         /// <returns>string</returns>
-        System.Threading.Tasks.Task<string> ConnectOptionsNamespacedPodProxy_6Async (string _namespace, string name, string path);
+        System.Threading.Tasks.Task<string> ConnectOptionsNamespacedPodProxy_6Async (string _namespace, string name, string path2, string path);
         
         /// <summary>
         /// replace status of the specified Pod
@@ -11933,9 +11945,10 @@ namespace KubeNET.Swagger.Api
         /// </summary>
         /// <param name="_namespace">object name and auth scope, such as for teams and projects</param> 
         /// <param name="name">name of the Pod</param> 
+        /// <param name="path2">path to the resource</param> 
         /// <param name="path">Path is the URL path to use for the current proxy request to pod.</param> 
         /// <returns>string</returns>            
-        public string ConnectGetNamespacedPodProxy_1 (string _namespace, string name, string path)
+        public string ConnectGetNamespacedPodProxy_1 (string _namespace, string name, string path2, string path)
         {
             
             // verify the required parameter '_namespace' is set
@@ -11943,6 +11956,9 @@ namespace KubeNET.Swagger.Api
             
             // verify the required parameter 'name' is set
             if (name == null) throw new ApiException(400, "Missing required parameter 'name' when calling ConnectGetNamespacedPodProxy_1");
+            
+            // verify the required parameter 'path2' is set
+            if (path2 == null) throw new ApiException(400, "Missing required parameter 'path2' when calling ConnectGetNamespacedPodProxy_1");
             
     
             var path_ = "/api/v1/namespaces/{namespace}/pods/{name}/proxy/{path:*}";
@@ -11967,6 +11983,7 @@ namespace KubeNET.Swagger.Api
             pathParams.Add("format", "json");
             if (_namespace != null) pathParams.Add("namespace", ApiClient.ParameterToString(_namespace)); // path parameter
             if (name != null) pathParams.Add("name", ApiClient.ParameterToString(name)); // path parameter
+            if (path2 != null) pathParams.Add("path", ApiClient.ParameterToString(path2)); // path parameter
             
             if (path != null) queryParams.Add("path", ApiClient.ParameterToString(path)); // query parameter
             
@@ -11993,14 +12010,17 @@ namespace KubeNET.Swagger.Api
         /// </summary>
         /// <param name="_namespace">object name and auth scope, such as for teams and projects</param>
         /// <param name="name">name of the Pod</param>
+        /// <param name="path2">path to the resource</param>
         /// <param name="path">Path is the URL path to use for the current proxy request to pod.</param>
         /// <returns>string</returns>
-        public async System.Threading.Tasks.Task<string> ConnectGetNamespacedPodProxy_1Async (string _namespace, string name, string path)
+        public async System.Threading.Tasks.Task<string> ConnectGetNamespacedPodProxy_1Async (string _namespace, string name, string path2, string path)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling ConnectGetNamespacedPodProxy_1");
             // verify the required parameter 'name' is set
             if (name == null) throw new ApiException(400, "Missing required parameter 'name' when calling ConnectGetNamespacedPodProxy_1");
+            // verify the required parameter 'path2' is set
+            if (path2 == null) throw new ApiException(400, "Missing required parameter 'path2' when calling ConnectGetNamespacedPodProxy_1");
             
     
             var path_ = "/api/v1/namespaces/{namespace}/pods/{name}/proxy/{path:*}";
@@ -12025,6 +12045,7 @@ namespace KubeNET.Swagger.Api
             pathParams.Add("format", "json");
             if (_namespace != null) pathParams.Add("namespace", ApiClient.ParameterToString(_namespace)); // path parameter
             if (name != null) pathParams.Add("name", ApiClient.ParameterToString(name)); // path parameter
+            if (path2 != null) pathParams.Add("path", ApiClient.ParameterToString(path2)); // path parameter
             
             if (path != null) queryParams.Add("path", ApiClient.ParameterToString(path)); // query parameter
             
@@ -12048,9 +12069,10 @@ namespace KubeNET.Swagger.Api
         /// </summary>
         /// <param name="_namespace">object name and auth scope, such as for teams and projects</param> 
         /// <param name="name">name of the Pod</param> 
+        /// <param name="path2">path to the resource</param> 
         /// <param name="path">Path is the URL path to use for the current proxy request to pod.</param> 
         /// <returns>string</returns>            
-        public string ConnectHeadNamespacedPodProxy_2 (string _namespace, string name, string path)
+        public string ConnectHeadNamespacedPodProxy_2 (string _namespace, string name, string path2, string path)
         {
             
             // verify the required parameter '_namespace' is set
@@ -12058,6 +12080,9 @@ namespace KubeNET.Swagger.Api
             
             // verify the required parameter 'name' is set
             if (name == null) throw new ApiException(400, "Missing required parameter 'name' when calling ConnectHeadNamespacedPodProxy_2");
+            
+            // verify the required parameter 'path2' is set
+            if (path2 == null) throw new ApiException(400, "Missing required parameter 'path2' when calling ConnectHeadNamespacedPodProxy_2");
             
     
             var path_ = "/api/v1/namespaces/{namespace}/pods/{name}/proxy/{path:*}";
@@ -12082,6 +12107,7 @@ namespace KubeNET.Swagger.Api
             pathParams.Add("format", "json");
             if (_namespace != null) pathParams.Add("namespace", ApiClient.ParameterToString(_namespace)); // path parameter
             if (name != null) pathParams.Add("name", ApiClient.ParameterToString(name)); // path parameter
+            if (path2 != null) pathParams.Add("path", ApiClient.ParameterToString(path2)); // path parameter
             
             if (path != null) queryParams.Add("path", ApiClient.ParameterToString(path)); // query parameter
             
@@ -12108,14 +12134,17 @@ namespace KubeNET.Swagger.Api
         /// </summary>
         /// <param name="_namespace">object name and auth scope, such as for teams and projects</param>
         /// <param name="name">name of the Pod</param>
+        /// <param name="path2">path to the resource</param>
         /// <param name="path">Path is the URL path to use for the current proxy request to pod.</param>
         /// <returns>string</returns>
-        public async System.Threading.Tasks.Task<string> ConnectHeadNamespacedPodProxy_2Async (string _namespace, string name, string path)
+        public async System.Threading.Tasks.Task<string> ConnectHeadNamespacedPodProxy_2Async (string _namespace, string name, string path2, string path)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling ConnectHeadNamespacedPodProxy_2");
             // verify the required parameter 'name' is set
             if (name == null) throw new ApiException(400, "Missing required parameter 'name' when calling ConnectHeadNamespacedPodProxy_2");
+            // verify the required parameter 'path2' is set
+            if (path2 == null) throw new ApiException(400, "Missing required parameter 'path2' when calling ConnectHeadNamespacedPodProxy_2");
             
     
             var path_ = "/api/v1/namespaces/{namespace}/pods/{name}/proxy/{path:*}";
@@ -12140,6 +12169,7 @@ namespace KubeNET.Swagger.Api
             pathParams.Add("format", "json");
             if (_namespace != null) pathParams.Add("namespace", ApiClient.ParameterToString(_namespace)); // path parameter
             if (name != null) pathParams.Add("name", ApiClient.ParameterToString(name)); // path parameter
+            if (path2 != null) pathParams.Add("path", ApiClient.ParameterToString(path2)); // path parameter
             
             if (path != null) queryParams.Add("path", ApiClient.ParameterToString(path)); // query parameter
             
@@ -12163,9 +12193,10 @@ namespace KubeNET.Swagger.Api
         /// </summary>
         /// <param name="_namespace">object name and auth scope, such as for teams and projects</param> 
         /// <param name="name">name of the Pod</param> 
+        /// <param name="path2">path to the resource</param> 
         /// <param name="path">Path is the URL path to use for the current proxy request to pod.</param> 
         /// <returns>string</returns>            
-        public string ConnectPutNamespacedPodProxy_3 (string _namespace, string name, string path)
+        public string ConnectPutNamespacedPodProxy_3 (string _namespace, string name, string path2, string path)
         {
             
             // verify the required parameter '_namespace' is set
@@ -12173,6 +12204,9 @@ namespace KubeNET.Swagger.Api
             
             // verify the required parameter 'name' is set
             if (name == null) throw new ApiException(400, "Missing required parameter 'name' when calling ConnectPutNamespacedPodProxy_3");
+            
+            // verify the required parameter 'path2' is set
+            if (path2 == null) throw new ApiException(400, "Missing required parameter 'path2' when calling ConnectPutNamespacedPodProxy_3");
             
     
             var path_ = "/api/v1/namespaces/{namespace}/pods/{name}/proxy/{path:*}";
@@ -12197,6 +12231,7 @@ namespace KubeNET.Swagger.Api
             pathParams.Add("format", "json");
             if (_namespace != null) pathParams.Add("namespace", ApiClient.ParameterToString(_namespace)); // path parameter
             if (name != null) pathParams.Add("name", ApiClient.ParameterToString(name)); // path parameter
+            if (path2 != null) pathParams.Add("path", ApiClient.ParameterToString(path2)); // path parameter
             
             if (path != null) queryParams.Add("path", ApiClient.ParameterToString(path)); // query parameter
             
@@ -12223,14 +12258,17 @@ namespace KubeNET.Swagger.Api
         /// </summary>
         /// <param name="_namespace">object name and auth scope, such as for teams and projects</param>
         /// <param name="name">name of the Pod</param>
+        /// <param name="path2">path to the resource</param>
         /// <param name="path">Path is the URL path to use for the current proxy request to pod.</param>
         /// <returns>string</returns>
-        public async System.Threading.Tasks.Task<string> ConnectPutNamespacedPodProxy_3Async (string _namespace, string name, string path)
+        public async System.Threading.Tasks.Task<string> ConnectPutNamespacedPodProxy_3Async (string _namespace, string name, string path2, string path)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling ConnectPutNamespacedPodProxy_3");
             // verify the required parameter 'name' is set
             if (name == null) throw new ApiException(400, "Missing required parameter 'name' when calling ConnectPutNamespacedPodProxy_3");
+            // verify the required parameter 'path2' is set
+            if (path2 == null) throw new ApiException(400, "Missing required parameter 'path2' when calling ConnectPutNamespacedPodProxy_3");
             
     
             var path_ = "/api/v1/namespaces/{namespace}/pods/{name}/proxy/{path:*}";
@@ -12255,6 +12293,7 @@ namespace KubeNET.Swagger.Api
             pathParams.Add("format", "json");
             if (_namespace != null) pathParams.Add("namespace", ApiClient.ParameterToString(_namespace)); // path parameter
             if (name != null) pathParams.Add("name", ApiClient.ParameterToString(name)); // path parameter
+            if (path2 != null) pathParams.Add("path", ApiClient.ParameterToString(path2)); // path parameter
             
             if (path != null) queryParams.Add("path", ApiClient.ParameterToString(path)); // query parameter
             
@@ -12278,9 +12317,10 @@ namespace KubeNET.Swagger.Api
         /// </summary>
         /// <param name="_namespace">object name and auth scope, such as for teams and projects</param> 
         /// <param name="name">name of the Pod</param> 
+        /// <param name="path2">path to the resource</param> 
         /// <param name="path">Path is the URL path to use for the current proxy request to pod.</param> 
         /// <returns>string</returns>            
-        public string ConnectPostNamespacedPodProxy_4 (string _namespace, string name, string path)
+        public string ConnectPostNamespacedPodProxy_4 (string _namespace, string name, string path2, string path)
         {
             
             // verify the required parameter '_namespace' is set
@@ -12288,6 +12328,9 @@ namespace KubeNET.Swagger.Api
             
             // verify the required parameter 'name' is set
             if (name == null) throw new ApiException(400, "Missing required parameter 'name' when calling ConnectPostNamespacedPodProxy_4");
+            
+            // verify the required parameter 'path2' is set
+            if (path2 == null) throw new ApiException(400, "Missing required parameter 'path2' when calling ConnectPostNamespacedPodProxy_4");
             
     
             var path_ = "/api/v1/namespaces/{namespace}/pods/{name}/proxy/{path:*}";
@@ -12312,6 +12355,7 @@ namespace KubeNET.Swagger.Api
             pathParams.Add("format", "json");
             if (_namespace != null) pathParams.Add("namespace", ApiClient.ParameterToString(_namespace)); // path parameter
             if (name != null) pathParams.Add("name", ApiClient.ParameterToString(name)); // path parameter
+            if (path2 != null) pathParams.Add("path", ApiClient.ParameterToString(path2)); // path parameter
             
             if (path != null) queryParams.Add("path", ApiClient.ParameterToString(path)); // query parameter
             
@@ -12338,14 +12382,17 @@ namespace KubeNET.Swagger.Api
         /// </summary>
         /// <param name="_namespace">object name and auth scope, such as for teams and projects</param>
         /// <param name="name">name of the Pod</param>
+        /// <param name="path2">path to the resource</param>
         /// <param name="path">Path is the URL path to use for the current proxy request to pod.</param>
         /// <returns>string</returns>
-        public async System.Threading.Tasks.Task<string> ConnectPostNamespacedPodProxy_4Async (string _namespace, string name, string path)
+        public async System.Threading.Tasks.Task<string> ConnectPostNamespacedPodProxy_4Async (string _namespace, string name, string path2, string path)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling ConnectPostNamespacedPodProxy_4");
             // verify the required parameter 'name' is set
             if (name == null) throw new ApiException(400, "Missing required parameter 'name' when calling ConnectPostNamespacedPodProxy_4");
+            // verify the required parameter 'path2' is set
+            if (path2 == null) throw new ApiException(400, "Missing required parameter 'path2' when calling ConnectPostNamespacedPodProxy_4");
             
     
             var path_ = "/api/v1/namespaces/{namespace}/pods/{name}/proxy/{path:*}";
@@ -12370,6 +12417,7 @@ namespace KubeNET.Swagger.Api
             pathParams.Add("format", "json");
             if (_namespace != null) pathParams.Add("namespace", ApiClient.ParameterToString(_namespace)); // path parameter
             if (name != null) pathParams.Add("name", ApiClient.ParameterToString(name)); // path parameter
+            if (path2 != null) pathParams.Add("path", ApiClient.ParameterToString(path2)); // path parameter
             
             if (path != null) queryParams.Add("path", ApiClient.ParameterToString(path)); // query parameter
             
@@ -12393,9 +12441,10 @@ namespace KubeNET.Swagger.Api
         /// </summary>
         /// <param name="_namespace">object name and auth scope, such as for teams and projects</param> 
         /// <param name="name">name of the Pod</param> 
+        /// <param name="path2">path to the resource</param> 
         /// <param name="path">Path is the URL path to use for the current proxy request to pod.</param> 
         /// <returns>string</returns>            
-        public string ConnectDeleteNamespacedPodProxy_5 (string _namespace, string name, string path)
+        public string ConnectDeleteNamespacedPodProxy_5 (string _namespace, string name, string path2, string path)
         {
             
             // verify the required parameter '_namespace' is set
@@ -12403,6 +12452,9 @@ namespace KubeNET.Swagger.Api
             
             // verify the required parameter 'name' is set
             if (name == null) throw new ApiException(400, "Missing required parameter 'name' when calling ConnectDeleteNamespacedPodProxy_5");
+            
+            // verify the required parameter 'path2' is set
+            if (path2 == null) throw new ApiException(400, "Missing required parameter 'path2' when calling ConnectDeleteNamespacedPodProxy_5");
             
     
             var path_ = "/api/v1/namespaces/{namespace}/pods/{name}/proxy/{path:*}";
@@ -12427,6 +12479,7 @@ namespace KubeNET.Swagger.Api
             pathParams.Add("format", "json");
             if (_namespace != null) pathParams.Add("namespace", ApiClient.ParameterToString(_namespace)); // path parameter
             if (name != null) pathParams.Add("name", ApiClient.ParameterToString(name)); // path parameter
+            if (path2 != null) pathParams.Add("path", ApiClient.ParameterToString(path2)); // path parameter
             
             if (path != null) queryParams.Add("path", ApiClient.ParameterToString(path)); // query parameter
             
@@ -12453,14 +12506,17 @@ namespace KubeNET.Swagger.Api
         /// </summary>
         /// <param name="_namespace">object name and auth scope, such as for teams and projects</param>
         /// <param name="name">name of the Pod</param>
+        /// <param name="path2">path to the resource</param>
         /// <param name="path">Path is the URL path to use for the current proxy request to pod.</param>
         /// <returns>string</returns>
-        public async System.Threading.Tasks.Task<string> ConnectDeleteNamespacedPodProxy_5Async (string _namespace, string name, string path)
+        public async System.Threading.Tasks.Task<string> ConnectDeleteNamespacedPodProxy_5Async (string _namespace, string name, string path2, string path)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling ConnectDeleteNamespacedPodProxy_5");
             // verify the required parameter 'name' is set
             if (name == null) throw new ApiException(400, "Missing required parameter 'name' when calling ConnectDeleteNamespacedPodProxy_5");
+            // verify the required parameter 'path2' is set
+            if (path2 == null) throw new ApiException(400, "Missing required parameter 'path2' when calling ConnectDeleteNamespacedPodProxy_5");
             
     
             var path_ = "/api/v1/namespaces/{namespace}/pods/{name}/proxy/{path:*}";
@@ -12485,6 +12541,7 @@ namespace KubeNET.Swagger.Api
             pathParams.Add("format", "json");
             if (_namespace != null) pathParams.Add("namespace", ApiClient.ParameterToString(_namespace)); // path parameter
             if (name != null) pathParams.Add("name", ApiClient.ParameterToString(name)); // path parameter
+            if (path2 != null) pathParams.Add("path", ApiClient.ParameterToString(path2)); // path parameter
             
             if (path != null) queryParams.Add("path", ApiClient.ParameterToString(path)); // query parameter
             
@@ -12508,9 +12565,10 @@ namespace KubeNET.Swagger.Api
         /// </summary>
         /// <param name="_namespace">object name and auth scope, such as for teams and projects</param> 
         /// <param name="name">name of the Pod</param> 
+        /// <param name="path2">path to the resource</param> 
         /// <param name="path">Path is the URL path to use for the current proxy request to pod.</param> 
         /// <returns>string</returns>            
-        public string ConnectOptionsNamespacedPodProxy_6 (string _namespace, string name, string path)
+        public string ConnectOptionsNamespacedPodProxy_6 (string _namespace, string name, string path2, string path)
         {
             
             // verify the required parameter '_namespace' is set
@@ -12518,6 +12576,9 @@ namespace KubeNET.Swagger.Api
             
             // verify the required parameter 'name' is set
             if (name == null) throw new ApiException(400, "Missing required parameter 'name' when calling ConnectOptionsNamespacedPodProxy_6");
+            
+            // verify the required parameter 'path2' is set
+            if (path2 == null) throw new ApiException(400, "Missing required parameter 'path2' when calling ConnectOptionsNamespacedPodProxy_6");
             
     
             var path_ = "/api/v1/namespaces/{namespace}/pods/{name}/proxy/{path:*}";
@@ -12542,6 +12603,7 @@ namespace KubeNET.Swagger.Api
             pathParams.Add("format", "json");
             if (_namespace != null) pathParams.Add("namespace", ApiClient.ParameterToString(_namespace)); // path parameter
             if (name != null) pathParams.Add("name", ApiClient.ParameterToString(name)); // path parameter
+            if (path2 != null) pathParams.Add("path", ApiClient.ParameterToString(path2)); // path parameter
             
             if (path != null) queryParams.Add("path", ApiClient.ParameterToString(path)); // query parameter
             
@@ -12568,14 +12630,17 @@ namespace KubeNET.Swagger.Api
         /// </summary>
         /// <param name="_namespace">object name and auth scope, such as for teams and projects</param>
         /// <param name="name">name of the Pod</param>
+        /// <param name="path2">path to the resource</param>
         /// <param name="path">Path is the URL path to use for the current proxy request to pod.</param>
         /// <returns>string</returns>
-        public async System.Threading.Tasks.Task<string> ConnectOptionsNamespacedPodProxy_6Async (string _namespace, string name, string path)
+        public async System.Threading.Tasks.Task<string> ConnectOptionsNamespacedPodProxy_6Async (string _namespace, string name, string path2, string path)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling ConnectOptionsNamespacedPodProxy_6");
             // verify the required parameter 'name' is set
             if (name == null) throw new ApiException(400, "Missing required parameter 'name' when calling ConnectOptionsNamespacedPodProxy_6");
+            // verify the required parameter 'path2' is set
+            if (path2 == null) throw new ApiException(400, "Missing required parameter 'path2' when calling ConnectOptionsNamespacedPodProxy_6");
             
     
             var path_ = "/api/v1/namespaces/{namespace}/pods/{name}/proxy/{path:*}";
@@ -12600,6 +12665,7 @@ namespace KubeNET.Swagger.Api
             pathParams.Add("format", "json");
             if (_namespace != null) pathParams.Add("namespace", ApiClient.ParameterToString(_namespace)); // path parameter
             if (name != null) pathParams.Add("name", ApiClient.ParameterToString(name)); // path parameter
+            if (path2 != null) pathParams.Add("path", ApiClient.ParameterToString(path2)); // path parameter
             
             if (path != null) queryParams.Add("path", ApiClient.ParameterToString(path)); // query parameter
             

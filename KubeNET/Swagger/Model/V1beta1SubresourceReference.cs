@@ -22,14 +22,6 @@ namespace KubeNET.Swagger.Model {
 
     
     /// <summary>
-    /// Namespace of the referent; More info: http://releases.k8s.io/HEAD/docs/user-guide/namespaces.md
-    /// </summary>
-    /// <value>Namespace of the referent; More info: http://releases.k8s.io/HEAD/docs/user-guide/namespaces.md</value>
-    [DataMember(Name="namespace", EmitDefaultValue=false)]
-    public string Namespace { get; set; }
-
-    
-    /// <summary>
     /// Name of the referent; More info: http://releases.k8s.io/HEAD/docs/user-guide/identifiers.md#names
     /// </summary>
     /// <value>Name of the referent; More info: http://releases.k8s.io/HEAD/docs/user-guide/identifiers.md#names</value>
@@ -63,8 +55,6 @@ namespace KubeNET.Swagger.Model {
       sb.Append("class V1beta1SubresourceReference {\n");
       
       sb.Append("  Kind: ").Append(Kind).Append("\n");
-      
-      sb.Append("  Namespace: ").Append(Namespace).Append("\n");
       
       sb.Append("  Name: ").Append(Name).Append("\n");
       

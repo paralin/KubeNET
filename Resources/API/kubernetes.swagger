@@ -15,6 +15,14 @@
       "description": "get available API versions"
     },
     {
+      "name": "apis",
+      "description": "get available API versions"
+    },
+    {
+      "name": "extensions",
+      "description": "get information of a group"
+    },
+    {
       "name": "v1",
       "description": "API at /api/v1"
     },
@@ -35,6 +43,46 @@
         ],
         "operationId": "getAPIVersions",
         "summary": "get available API versions",
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "No response was specified"
+          }
+        }
+      }
+    },
+    "/apis": {
+      "get": {
+        "tags": [
+          "apis"
+        ],
+        "operationId": "getAPIVersions",
+        "summary": "get available API versions",
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "No response was specified"
+          }
+        }
+      }
+    },
+    "/apis/extensions": {
+      "get": {
+        "tags": [
+          "extensions"
+        ],
+        "operationId": "getAPIGroup",
+        "summary": "get information of a group",
         "produces": [
           "application/json"
         ],
@@ -6503,6 +6551,13 @@
             "name": "name",
             "required": true,
             "type": "string"
+          },
+          {
+            "in": "path",
+            "description": "path to the resource",
+            "name": "path",
+            "required": true,
+            "type": "string"
           }
         ],
         "responses": {
@@ -6545,6 +6600,13 @@
             "in": "path",
             "description": "name of the Pod",
             "name": "name",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "description": "path to the resource",
+            "name": "path",
             "required": true,
             "type": "string"
           }
@@ -6591,6 +6653,13 @@
             "name": "name",
             "required": true,
             "type": "string"
+          },
+          {
+            "in": "path",
+            "description": "path to the resource",
+            "name": "path",
+            "required": true,
+            "type": "string"
           }
         ],
         "responses": {
@@ -6633,6 +6702,13 @@
             "in": "path",
             "description": "name of the Pod",
             "name": "name",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "description": "path to the resource",
+            "name": "path",
             "required": true,
             "type": "string"
           }
@@ -6679,6 +6755,13 @@
             "name": "name",
             "required": true,
             "type": "string"
+          },
+          {
+            "in": "path",
+            "description": "path to the resource",
+            "name": "path",
+            "required": true,
+            "type": "string"
           }
         ],
         "responses": {
@@ -6721,6 +6804,13 @@
             "in": "path",
             "description": "name of the Pod",
             "name": "name",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "description": "path to the resource",
+            "name": "path",
             "required": true,
             "type": "string"
           }
@@ -13592,8 +13682,7 @@
       }
     },
     "unversioned.Patch": {
-      "description": "Patch is provided to give a concrete name and type to the Kubernetes PATCH request body.",
-      "properties": {}
+      "description": "Patch is provided to give a concrete name and type to the Kubernetes PATCH request body."
     },
     "unversioned.Status": {
       "description": "Status is a return value for calls that don't return other objects.",
@@ -16161,10 +16250,6 @@
         "kind": {
           "type": "string",
           "description": "Kind of the referent; More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#types-kinds\""
-        },
-        "namespace": {
-          "type": "string",
-          "description": "Namespace of the referent; More info: http://releases.k8s.io/HEAD/docs/user-guide/namespaces.md"
         },
         "name": {
           "type": "string",
