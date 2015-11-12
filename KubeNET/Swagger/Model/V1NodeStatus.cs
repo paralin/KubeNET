@@ -14,6 +14,14 @@ namespace KubeNET.Swagger.Model {
   public class V1NodeStatus {
     
     /// <summary>
+    /// Capacity represents the available resources of a node. More info: http://releases.k8s.io/HEAD/docs/user-guide/persistent-volumes.md#capacity for more details.
+    /// </summary>
+    /// <value>Capacity represents the available resources of a node. More info: http://releases.k8s.io/HEAD/docs/user-guide/persistent-volumes.md#capacity for more details.</value>
+    [DataMember(Name="capacity", EmitDefaultValue=false)]
+    public Dictionary<string, string> Capacity { get; set; }
+
+    
+    /// <summary>
     /// NodePhase is the recently observed lifecycle phase of the node. More info: http://releases.k8s.io/HEAD/docs/admin/node.md#node-phase
     /// </summary>
     /// <value>NodePhase is the recently observed lifecycle phase of the node. More info: http://releases.k8s.io/HEAD/docs/admin/node.md#node-phase</value>
@@ -61,6 +69,8 @@ namespace KubeNET.Swagger.Model {
     public override string ToString()  {
       var sb = new StringBuilder();
       sb.Append("class V1NodeStatus {\n");
+      
+      sb.Append("  Capacity: ").Append(Capacity).Append("\n");
       
       sb.Append("  Phase: ").Append(Phase).Append("\n");
       

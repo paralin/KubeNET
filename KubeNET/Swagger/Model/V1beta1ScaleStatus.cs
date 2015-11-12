@@ -21,6 +21,14 @@ namespace KubeNET.Swagger.Model {
     public int? Replicas { get; set; }
 
     
+    /// <summary>
+    /// label query over pods that should match the replicas count. More info: http://releases.k8s.io/HEAD/docs/user-guide/labels.md#label-selectors
+    /// </summary>
+    /// <value>label query over pods that should match the replicas count. More info: http://releases.k8s.io/HEAD/docs/user-guide/labels.md#label-selectors</value>
+    [DataMember(Name="selector", EmitDefaultValue=false)]
+    public Dictionary<string, string> Selector { get; set; }
+
+    
 
     /// <summary>
     /// Get the string presentation of the object
@@ -31,6 +39,8 @@ namespace KubeNET.Swagger.Model {
       sb.Append("class V1beta1ScaleStatus {\n");
       
       sb.Append("  Replicas: ").Append(Replicas).Append("\n");
+      
+      sb.Append("  Selector: ").Append(Selector).Append("\n");
       
       sb.Append("}\n");
       return sb.ToString();

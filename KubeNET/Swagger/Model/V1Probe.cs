@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 namespace KubeNET.Swagger.Model {
 
   /// <summary>
-  /// Probe describes a liveness probe to be examined to the container.
+  /// Probe describes a health check to be performed against a container to determine whether it is alive or ready to recieve traffic.
   /// </summary>
   [DataContract]
   public class V1Probe {
@@ -46,11 +46,35 @@ namespace KubeNET.Swagger.Model {
 
     
     /// <summary>
-    /// Number of seconds after which liveness probes timeout. Defaults to 1 second. More info: http://releases.k8s.io/HEAD/docs/user-guide/pod-states.md#container-probes
+    /// Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. More info: http://releases.k8s.io/HEAD/docs/user-guide/pod-states.md#container-probes
     /// </summary>
-    /// <value>Number of seconds after which liveness probes timeout. Defaults to 1 second. More info: http://releases.k8s.io/HEAD/docs/user-guide/pod-states.md#container-probes</value>
+    /// <value>Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. More info: http://releases.k8s.io/HEAD/docs/user-guide/pod-states.md#container-probes</value>
     [DataMember(Name="timeoutSeconds", EmitDefaultValue=false)]
     public int? TimeoutSeconds { get; set; }
+
+    
+    /// <summary>
+    /// How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1.
+    /// </summary>
+    /// <value>How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1.</value>
+    [DataMember(Name="periodSeconds", EmitDefaultValue=false)]
+    public int? PeriodSeconds { get; set; }
+
+    
+    /// <summary>
+    /// Minimum consecutive successes for the probe to be considered successful after having failed. Defaults to 1. Must be 1 for liveness. Minimum value is 1.
+    /// </summary>
+    /// <value>Minimum consecutive successes for the probe to be considered successful after having failed. Defaults to 1. Must be 1 for liveness. Minimum value is 1.</value>
+    [DataMember(Name="successThreshold", EmitDefaultValue=false)]
+    public int? SuccessThreshold { get; set; }
+
+    
+    /// <summary>
+    /// Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1.
+    /// </summary>
+    /// <value>Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1.</value>
+    [DataMember(Name="failureThreshold", EmitDefaultValue=false)]
+    public int? FailureThreshold { get; set; }
 
     
 
@@ -71,6 +95,12 @@ namespace KubeNET.Swagger.Model {
       sb.Append("  InitialDelaySeconds: ").Append(InitialDelaySeconds).Append("\n");
       
       sb.Append("  TimeoutSeconds: ").Append(TimeoutSeconds).Append("\n");
+      
+      sb.Append("  PeriodSeconds: ").Append(PeriodSeconds).Append("\n");
+      
+      sb.Append("  SuccessThreshold: ").Append(SuccessThreshold).Append("\n");
+      
+      sb.Append("  FailureThreshold: ").Append(FailureThreshold).Append("\n");
       
       sb.Append("}\n");
       return sb.ToString();

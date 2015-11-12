@@ -62,6 +62,14 @@ namespace KubeNET.Swagger.Model {
 
     
     /// <summary>
+    /// NodeSelector is a selector which must be true for the pod to fit on a node. Selector which must match a node's labels for the pod to be scheduled on that node. More info: http://releases.k8s.io/HEAD/docs/user-guide/node-selection/README.md
+    /// </summary>
+    /// <value>NodeSelector is a selector which must be true for the pod to fit on a node. Selector which must match a node's labels for the pod to be scheduled on that node. More info: http://releases.k8s.io/HEAD/docs/user-guide/node-selection/README.md</value>
+    [DataMember(Name="nodeSelector", EmitDefaultValue=false)]
+    public Dictionary<string, string> NodeSelector { get; set; }
+
+    
+    /// <summary>
     /// ServiceAccountName is the name of the ServiceAccount to use to run this pod. More info: http://releases.k8s.io/HEAD/docs/design/service_accounts.md
     /// </summary>
     /// <value>ServiceAccountName is the name of the ServiceAccount to use to run this pod. More info: http://releases.k8s.io/HEAD/docs/design/service_accounts.md</value>
@@ -145,6 +153,8 @@ namespace KubeNET.Swagger.Model {
       sb.Append("  ActiveDeadlineSeconds: ").Append(ActiveDeadlineSeconds).Append("\n");
       
       sb.Append("  DnsPolicy: ").Append(DnsPolicy).Append("\n");
+      
+      sb.Append("  NodeSelector: ").Append(NodeSelector).Append("\n");
       
       sb.Append("  ServiceAccountName: ").Append(ServiceAccountName).Append("\n");
       

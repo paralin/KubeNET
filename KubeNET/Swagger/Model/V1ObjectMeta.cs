@@ -93,6 +93,22 @@ namespace KubeNET.Swagger.Model {
     public int? DeletionGracePeriodSeconds { get; set; }
 
     
+    /// <summary>
+    /// Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://releases.k8s.io/HEAD/docs/user-guide/labels.md
+    /// </summary>
+    /// <value>Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://releases.k8s.io/HEAD/docs/user-guide/labels.md</value>
+    [DataMember(Name="labels", EmitDefaultValue=false)]
+    public Dictionary<string, string> Labels { get; set; }
+
+    
+    /// <summary>
+    /// Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://releases.k8s.io/HEAD/docs/user-guide/annotations.md
+    /// </summary>
+    /// <value>Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://releases.k8s.io/HEAD/docs/user-guide/annotations.md</value>
+    [DataMember(Name="annotations", EmitDefaultValue=false)]
+    public Dictionary<string, string> Annotations { get; set; }
+
+    
 
     /// <summary>
     /// Get the string presentation of the object
@@ -121,6 +137,10 @@ namespace KubeNET.Swagger.Model {
       sb.Append("  DeletionTimestamp: ").Append(DeletionTimestamp).Append("\n");
       
       sb.Append("  DeletionGracePeriodSeconds: ").Append(DeletionGracePeriodSeconds).Append("\n");
+      
+      sb.Append("  Labels: ").Append(Labels).Append("\n");
+      
+      sb.Append("  Annotations: ").Append(Annotations).Append("\n");
       
       sb.Append("}\n");
       return sb.ToString();

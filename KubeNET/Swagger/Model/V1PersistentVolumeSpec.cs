@@ -14,6 +14,14 @@ namespace KubeNET.Swagger.Model {
   public class V1PersistentVolumeSpec {
     
     /// <summary>
+    /// A description of the persistent volume's resources and capacity. More info: http://releases.k8s.io/HEAD/docs/user-guide/persistent-volumes.md#capacity
+    /// </summary>
+    /// <value>A description of the persistent volume's resources and capacity. More info: http://releases.k8s.io/HEAD/docs/user-guide/persistent-volumes.md#capacity</value>
+    [DataMember(Name="capacity", EmitDefaultValue=false)]
+    public Dictionary<string, string> Capacity { get; set; }
+
+    
+    /// <summary>
     /// GCEPersistentDisk represents a GCE Disk resource that is attached to a kubelet's host machine and then exposed to the pod. Provisioned by an admin. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#gcepersistentdisk
     /// </summary>
     /// <value>GCEPersistentDisk represents a GCE Disk resource that is attached to a kubelet's host machine and then exposed to the pod. Provisioned by an admin. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#gcepersistentdisk</value>
@@ -133,6 +141,8 @@ namespace KubeNET.Swagger.Model {
     public override string ToString()  {
       var sb = new StringBuilder();
       sb.Append("class V1PersistentVolumeSpec {\n");
+      
+      sb.Append("  Capacity: ").Append(Capacity).Append("\n");
       
       sb.Append("  GcePersistentDisk: ").Append(GcePersistentDisk).Append("\n");
       

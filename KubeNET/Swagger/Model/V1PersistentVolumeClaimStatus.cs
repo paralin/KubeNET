@@ -29,6 +29,14 @@ namespace KubeNET.Swagger.Model {
     public List<V1PersistentVolumeAccessMode> AccessModes { get; set; }
 
     
+    /// <summary>
+    /// Represents the actual resources of the underlying volume.
+    /// </summary>
+    /// <value>Represents the actual resources of the underlying volume.</value>
+    [DataMember(Name="capacity", EmitDefaultValue=false)]
+    public Dictionary<string, string> Capacity { get; set; }
+
+    
 
     /// <summary>
     /// Get the string presentation of the object
@@ -41,6 +49,8 @@ namespace KubeNET.Swagger.Model {
       sb.Append("  Phase: ").Append(Phase).Append("\n");
       
       sb.Append("  AccessModes: ").Append(AccessModes).Append("\n");
+      
+      sb.Append("  Capacity: ").Append(Capacity).Append("\n");
       
       sb.Append("}\n");
       return sb.ToString();

@@ -45,7 +45,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1ComponentStatusList</returns>
-        V1ComponentStatusList ListNamespacedComponentStatus (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        V1ComponentStatusList ListNamespacedComponentStatus (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// list objects of kind ComponentStatus
@@ -60,7 +60,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1ComponentStatusList</returns>
-        System.Threading.Tasks.Task<V1ComponentStatusList> ListNamespacedComponentStatusAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<V1ComponentStatusList> ListNamespacedComponentStatusAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// read the specified ComponentStatus
@@ -97,7 +97,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1EndpointsList</returns>
-        V1EndpointsList ListEndpoints (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        V1EndpointsList ListEndpoints (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// list or watch objects of kind Endpoints
@@ -112,7 +112,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1EndpointsList</returns>
-        System.Threading.Tasks.Task<V1EndpointsList> ListEndpointsAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<V1EndpointsList> ListEndpointsAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// list or watch objects of kind Event
@@ -127,7 +127,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1EventList</returns>
-        V1EventList ListEvent (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        V1EventList ListEvent (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// list or watch objects of kind Event
@@ -142,7 +142,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1EventList</returns>
-        System.Threading.Tasks.Task<V1EventList> ListEventAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<V1EventList> ListEventAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// list or watch objects of kind LimitRange
@@ -157,7 +157,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1LimitRangeList</returns>
-        V1LimitRangeList ListLimitRange (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        V1LimitRangeList ListLimitRange (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// list or watch objects of kind LimitRange
@@ -172,7 +172,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1LimitRangeList</returns>
-        System.Threading.Tasks.Task<V1LimitRangeList> ListLimitRangeAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<V1LimitRangeList> ListLimitRangeAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// list or watch objects of kind Namespace
@@ -187,7 +187,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1NamespaceList</returns>
-        V1NamespaceList ListNamespacedNamespace (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        V1NamespaceList ListNamespacedNamespace (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// list or watch objects of kind Namespace
@@ -202,7 +202,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1NamespaceList</returns>
-        System.Threading.Tasks.Task<V1NamespaceList> ListNamespacedNamespaceAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<V1NamespaceList> ListNamespacedNamespaceAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// create a Namespace
@@ -264,7 +264,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1EndpointsList</returns>
-        V1EndpointsList ListNamespacedEndpoints (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        V1EndpointsList ListNamespacedEndpoints (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// list or watch objects of kind Endpoints
@@ -280,7 +280,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1EndpointsList</returns>
-        System.Threading.Tasks.Task<V1EndpointsList> ListNamespacedEndpointsAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<V1EndpointsList> ListNamespacedEndpointsAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// create a Endpoints
@@ -422,7 +422,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1EventList</returns>
-        V1EventList ListNamespacedEvent (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        V1EventList ListNamespacedEvent (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// list or watch objects of kind Event
@@ -438,7 +438,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1EventList</returns>
-        System.Threading.Tasks.Task<V1EventList> ListNamespacedEventAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<V1EventList> ListNamespacedEventAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// create a Event
@@ -580,7 +580,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1LimitRangeList</returns>
-        V1LimitRangeList ListNamespacedLimitRange (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        V1LimitRangeList ListNamespacedLimitRange (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// list or watch objects of kind LimitRange
@@ -596,7 +596,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1LimitRangeList</returns>
-        System.Threading.Tasks.Task<V1LimitRangeList> ListNamespacedLimitRangeAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<V1LimitRangeList> ListNamespacedLimitRangeAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// create a LimitRange
@@ -738,7 +738,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1PersistentVolumeClaimList</returns>
-        V1PersistentVolumeClaimList ListNamespacedPersistentVolumeClaim (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        V1PersistentVolumeClaimList ListNamespacedPersistentVolumeClaim (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// list or watch objects of kind PersistentVolumeClaim
@@ -754,7 +754,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1PersistentVolumeClaimList</returns>
-        System.Threading.Tasks.Task<V1PersistentVolumeClaimList> ListNamespacedPersistentVolumeClaimAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<V1PersistentVolumeClaimList> ListNamespacedPersistentVolumeClaimAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// create a PersistentVolumeClaim
@@ -922,7 +922,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1PodList</returns>
-        V1PodList ListNamespacedPod (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        V1PodList ListNamespacedPod (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// list or watch objects of kind Pod
@@ -938,7 +938,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1PodList</returns>
-        System.Threading.Tasks.Task<V1PodList> ListNamespacedPodAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<V1PodList> ListNamespacedPodAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// create a Pod
@@ -1242,7 +1242,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="tailLines">If set, the number of lines from the end of the logs to show. If not specified, logs are shown from the creation of the container or sinceSeconds or sinceTime</param>
         /// <param name="limitBytes">If set, the number of bytes to read from the server before terminating the log output. This may not display a complete final line of logging, and may return slightly more or slightly less than the specified limit.</param>
         /// <returns>V1Pod</returns>
-        V1Pod ReadNamespacedPodLog (string _namespace, string name, string pretty, string container, bool? follow, bool? previous, string sinceSeconds, string sinceTime, bool? timestamps, string tailLines, string limitBytes);
+        V1Pod ReadNamespacedPodLog (string _namespace, string name, string pretty, string container, bool? follow, bool? previous, int? sinceSeconds, string sinceTime, bool? timestamps, int? tailLines, int? limitBytes);
   
         /// <summary>
         /// read log of the specified Pod
@@ -1262,7 +1262,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="tailLines">If set, the number of lines from the end of the logs to show. If not specified, logs are shown from the creation of the container or sinceSeconds or sinceTime</param>
         /// <param name="limitBytes">If set, the number of bytes to read from the server before terminating the log output. This may not display a complete final line of logging, and may return slightly more or slightly less than the specified limit.</param>
         /// <returns>V1Pod</returns>
-        System.Threading.Tasks.Task<V1Pod> ReadNamespacedPodLogAsync (string _namespace, string name, string pretty, string container, bool? follow, bool? previous, string sinceSeconds, string sinceTime, bool? timestamps, string tailLines, string limitBytes);
+        System.Threading.Tasks.Task<V1Pod> ReadNamespacedPodLogAsync (string _namespace, string name, string pretty, string container, bool? follow, bool? previous, int? sinceSeconds, string sinceTime, bool? timestamps, int? tailLines, int? limitBytes);
         
         /// <summary>
         /// connect GET requests to portforward of Pod
@@ -1648,7 +1648,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1PodTemplateList</returns>
-        V1PodTemplateList ListNamespacedPodTemplate (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        V1PodTemplateList ListNamespacedPodTemplate (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// list or watch objects of kind PodTemplate
@@ -1664,7 +1664,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1PodTemplateList</returns>
-        System.Threading.Tasks.Task<V1PodTemplateList> ListNamespacedPodTemplateAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<V1PodTemplateList> ListNamespacedPodTemplateAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// create a PodTemplate
@@ -1806,7 +1806,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1ReplicationControllerList</returns>
-        V1ReplicationControllerList ListNamespacedReplicationController (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        V1ReplicationControllerList ListNamespacedReplicationController (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// list or watch objects of kind ReplicationController
@@ -1822,7 +1822,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1ReplicationControllerList</returns>
-        System.Threading.Tasks.Task<V1ReplicationControllerList> ListNamespacedReplicationControllerAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<V1ReplicationControllerList> ListNamespacedReplicationControllerAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// create a ReplicationController
@@ -1990,7 +1990,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1ResourceQuotaList</returns>
-        V1ResourceQuotaList ListNamespacedResourceQuota (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        V1ResourceQuotaList ListNamespacedResourceQuota (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// list or watch objects of kind ResourceQuota
@@ -2006,7 +2006,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1ResourceQuotaList</returns>
-        System.Threading.Tasks.Task<V1ResourceQuotaList> ListNamespacedResourceQuotaAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<V1ResourceQuotaList> ListNamespacedResourceQuotaAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// create a ResourceQuota
@@ -2174,7 +2174,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1SecretList</returns>
-        V1SecretList ListNamespacedSecret (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        V1SecretList ListNamespacedSecret (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// list or watch objects of kind Secret
@@ -2190,7 +2190,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1SecretList</returns>
-        System.Threading.Tasks.Task<V1SecretList> ListNamespacedSecretAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<V1SecretList> ListNamespacedSecretAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// create a Secret
@@ -2332,7 +2332,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1ServiceAccountList</returns>
-        V1ServiceAccountList ListNamespacedServiceAccount (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        V1ServiceAccountList ListNamespacedServiceAccount (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// list or watch objects of kind ServiceAccount
@@ -2348,7 +2348,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1ServiceAccountList</returns>
-        System.Threading.Tasks.Task<V1ServiceAccountList> ListNamespacedServiceAccountAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<V1ServiceAccountList> ListNamespacedServiceAccountAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// create a ServiceAccount
@@ -2490,7 +2490,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1ServiceList</returns>
-        V1ServiceList ListNamespacedService (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        V1ServiceList ListNamespacedService (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// list or watch objects of kind Service
@@ -2506,7 +2506,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1ServiceList</returns>
-        System.Threading.Tasks.Task<V1ServiceList> ListNamespacedServiceAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<V1ServiceList> ListNamespacedServiceAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// create a Service
@@ -2787,7 +2787,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1NodeList</returns>
-        V1NodeList ListNamespacedNode (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        V1NodeList ListNamespacedNode (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// list or watch objects of kind Node
@@ -2802,7 +2802,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1NodeList</returns>
-        System.Threading.Tasks.Task<V1NodeList> ListNamespacedNodeAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<V1NodeList> ListNamespacedNodeAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// create a Node
@@ -2957,7 +2957,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1PersistentVolumeClaimList</returns>
-        V1PersistentVolumeClaimList ListPersistentVolumeClaim (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        V1PersistentVolumeClaimList ListPersistentVolumeClaim (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// list or watch objects of kind PersistentVolumeClaim
@@ -2972,7 +2972,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1PersistentVolumeClaimList</returns>
-        System.Threading.Tasks.Task<V1PersistentVolumeClaimList> ListPersistentVolumeClaimAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<V1PersistentVolumeClaimList> ListPersistentVolumeClaimAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// list or watch objects of kind PersistentVolume
@@ -2987,7 +2987,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1PersistentVolumeList</returns>
-        V1PersistentVolumeList ListNamespacedPersistentVolume (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        V1PersistentVolumeList ListNamespacedPersistentVolume (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// list or watch objects of kind PersistentVolume
@@ -3002,7 +3002,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1PersistentVolumeList</returns>
-        System.Threading.Tasks.Task<V1PersistentVolumeList> ListNamespacedPersistentVolumeAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<V1PersistentVolumeList> ListNamespacedPersistentVolumeAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// create a PersistentVolume
@@ -3157,7 +3157,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1PodList</returns>
-        V1PodList ListPod (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        V1PodList ListPod (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// list or watch objects of kind Pod
@@ -3172,7 +3172,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1PodList</returns>
-        System.Threading.Tasks.Task<V1PodList> ListPodAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<V1PodList> ListPodAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// list or watch objects of kind PodTemplate
@@ -3187,7 +3187,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1PodTemplateList</returns>
-        V1PodTemplateList ListPodTemplate (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        V1PodTemplateList ListPodTemplate (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// list or watch objects of kind PodTemplate
@@ -3202,7 +3202,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1PodTemplateList</returns>
-        System.Threading.Tasks.Task<V1PodTemplateList> ListPodTemplateAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<V1PodTemplateList> ListPodTemplateAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// proxy GET requests to Pod
@@ -4021,7 +4021,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1ReplicationControllerList</returns>
-        V1ReplicationControllerList ListReplicationController (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        V1ReplicationControllerList ListReplicationController (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// list or watch objects of kind ReplicationController
@@ -4036,7 +4036,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1ReplicationControllerList</returns>
-        System.Threading.Tasks.Task<V1ReplicationControllerList> ListReplicationControllerAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<V1ReplicationControllerList> ListReplicationControllerAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// list or watch objects of kind ResourceQuota
@@ -4051,7 +4051,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1ResourceQuotaList</returns>
-        V1ResourceQuotaList ListResourceQuota (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        V1ResourceQuotaList ListResourceQuota (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// list or watch objects of kind ResourceQuota
@@ -4066,7 +4066,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1ResourceQuotaList</returns>
-        System.Threading.Tasks.Task<V1ResourceQuotaList> ListResourceQuotaAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<V1ResourceQuotaList> ListResourceQuotaAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// list or watch objects of kind Secret
@@ -4081,7 +4081,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1SecretList</returns>
-        V1SecretList ListSecret (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        V1SecretList ListSecret (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// list or watch objects of kind Secret
@@ -4096,7 +4096,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1SecretList</returns>
-        System.Threading.Tasks.Task<V1SecretList> ListSecretAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<V1SecretList> ListSecretAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// list or watch objects of kind ServiceAccount
@@ -4111,7 +4111,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1ServiceAccountList</returns>
-        V1ServiceAccountList ListServiceAccount (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        V1ServiceAccountList ListServiceAccount (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// list or watch objects of kind ServiceAccount
@@ -4126,7 +4126,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1ServiceAccountList</returns>
-        System.Threading.Tasks.Task<V1ServiceAccountList> ListServiceAccountAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<V1ServiceAccountList> ListServiceAccountAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// list or watch objects of kind Service
@@ -4141,7 +4141,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1ServiceList</returns>
-        V1ServiceList ListService (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        V1ServiceList ListService (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// list or watch objects of kind Service
@@ -4156,7 +4156,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1ServiceList</returns>
-        System.Threading.Tasks.Task<V1ServiceList> ListServiceAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<V1ServiceList> ListServiceAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch individual changes to a list of Endpoints
@@ -4171,7 +4171,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchEndpointsList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchEndpointsList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch individual changes to a list of Endpoints
@@ -4186,7 +4186,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchEndpointsListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchEndpointsListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch individual changes to a list of Event
@@ -4201,7 +4201,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchEventList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchEventList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch individual changes to a list of Event
@@ -4216,7 +4216,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchEventListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchEventListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch individual changes to a list of LimitRange
@@ -4231,7 +4231,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchLimitRangeList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchLimitRangeList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch individual changes to a list of LimitRange
@@ -4246,7 +4246,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchLimitRangeListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchLimitRangeListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch individual changes to a list of Namespace
@@ -4261,7 +4261,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchNamespacedNamespaceList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchNamespacedNamespaceList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch individual changes to a list of Namespace
@@ -4276,7 +4276,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedNamespaceListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedNamespaceListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch individual changes to a list of Endpoints
@@ -4292,7 +4292,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchNamespacedEndpointsList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchNamespacedEndpointsList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch individual changes to a list of Endpoints
@@ -4308,7 +4308,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedEndpointsListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedEndpointsListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch changes to an object of kind Endpoints
@@ -4325,7 +4325,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchNamespacedEndpoints (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchNamespacedEndpoints (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch changes to an object of kind Endpoints
@@ -4342,7 +4342,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedEndpointsAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedEndpointsAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch individual changes to a list of Event
@@ -4358,7 +4358,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchNamespacedEventList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchNamespacedEventList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch individual changes to a list of Event
@@ -4374,7 +4374,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedEventListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedEventListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch changes to an object of kind Event
@@ -4391,7 +4391,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchNamespacedEvent (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchNamespacedEvent (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch changes to an object of kind Event
@@ -4408,7 +4408,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedEventAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedEventAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch individual changes to a list of LimitRange
@@ -4424,7 +4424,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchNamespacedLimitRangeList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchNamespacedLimitRangeList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch individual changes to a list of LimitRange
@@ -4440,7 +4440,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedLimitRangeListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedLimitRangeListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch changes to an object of kind LimitRange
@@ -4457,7 +4457,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchNamespacedLimitRange (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchNamespacedLimitRange (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch changes to an object of kind LimitRange
@@ -4474,7 +4474,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedLimitRangeAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedLimitRangeAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch individual changes to a list of PersistentVolumeClaim
@@ -4490,7 +4490,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchNamespacedPersistentVolumeClaimList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchNamespacedPersistentVolumeClaimList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch individual changes to a list of PersistentVolumeClaim
@@ -4506,7 +4506,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedPersistentVolumeClaimListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedPersistentVolumeClaimListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch changes to an object of kind PersistentVolumeClaim
@@ -4523,7 +4523,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchNamespacedPersistentVolumeClaim (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchNamespacedPersistentVolumeClaim (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch changes to an object of kind PersistentVolumeClaim
@@ -4540,7 +4540,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedPersistentVolumeClaimAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedPersistentVolumeClaimAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch individual changes to a list of Pod
@@ -4556,7 +4556,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchNamespacedPodList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchNamespacedPodList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch individual changes to a list of Pod
@@ -4572,7 +4572,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedPodListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedPodListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch changes to an object of kind Pod
@@ -4589,7 +4589,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchNamespacedPod (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchNamespacedPod (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch changes to an object of kind Pod
@@ -4606,7 +4606,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedPodAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedPodAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch individual changes to a list of PodTemplate
@@ -4622,7 +4622,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchNamespacedPodTemplateList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchNamespacedPodTemplateList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch individual changes to a list of PodTemplate
@@ -4638,7 +4638,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedPodTemplateListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedPodTemplateListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch changes to an object of kind PodTemplate
@@ -4655,7 +4655,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchNamespacedPodTemplate (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchNamespacedPodTemplate (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch changes to an object of kind PodTemplate
@@ -4672,7 +4672,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedPodTemplateAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedPodTemplateAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch individual changes to a list of ReplicationController
@@ -4688,7 +4688,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchNamespacedReplicationControllerList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchNamespacedReplicationControllerList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch individual changes to a list of ReplicationController
@@ -4704,7 +4704,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedReplicationControllerListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedReplicationControllerListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch changes to an object of kind ReplicationController
@@ -4721,7 +4721,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchNamespacedReplicationController (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchNamespacedReplicationController (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch changes to an object of kind ReplicationController
@@ -4738,7 +4738,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedReplicationControllerAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedReplicationControllerAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch individual changes to a list of ResourceQuota
@@ -4754,7 +4754,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchNamespacedResourceQuotaList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchNamespacedResourceQuotaList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch individual changes to a list of ResourceQuota
@@ -4770,7 +4770,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedResourceQuotaListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedResourceQuotaListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch changes to an object of kind ResourceQuota
@@ -4787,7 +4787,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchNamespacedResourceQuota (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchNamespacedResourceQuota (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch changes to an object of kind ResourceQuota
@@ -4804,7 +4804,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedResourceQuotaAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedResourceQuotaAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch individual changes to a list of Secret
@@ -4820,7 +4820,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchNamespacedSecretList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchNamespacedSecretList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch individual changes to a list of Secret
@@ -4836,7 +4836,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedSecretListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedSecretListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch changes to an object of kind Secret
@@ -4853,7 +4853,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchNamespacedSecret (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchNamespacedSecret (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch changes to an object of kind Secret
@@ -4870,7 +4870,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedSecretAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedSecretAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch individual changes to a list of ServiceAccount
@@ -4886,7 +4886,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchNamespacedServiceAccountList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchNamespacedServiceAccountList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch individual changes to a list of ServiceAccount
@@ -4902,7 +4902,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedServiceAccountListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedServiceAccountListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch changes to an object of kind ServiceAccount
@@ -4919,7 +4919,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchNamespacedServiceAccount (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchNamespacedServiceAccount (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch changes to an object of kind ServiceAccount
@@ -4936,7 +4936,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedServiceAccountAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedServiceAccountAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch individual changes to a list of Service
@@ -4952,7 +4952,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchNamespacedServiceList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchNamespacedServiceList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch individual changes to a list of Service
@@ -4968,7 +4968,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedServiceListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedServiceListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch changes to an object of kind Service
@@ -4985,7 +4985,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchNamespacedService (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchNamespacedService (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch changes to an object of kind Service
@@ -5002,7 +5002,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedServiceAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedServiceAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch changes to an object of kind Namespace
@@ -5018,7 +5018,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchNamespacedNamespace (string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchNamespacedNamespace (string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch changes to an object of kind Namespace
@@ -5034,7 +5034,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedNamespaceAsync (string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedNamespaceAsync (string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch individual changes to a list of Node
@@ -5049,7 +5049,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchNamespacedNodeList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchNamespacedNodeList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch individual changes to a list of Node
@@ -5064,7 +5064,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedNodeListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedNodeListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch changes to an object of kind Node
@@ -5080,7 +5080,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchNamespacedNode (string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchNamespacedNode (string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch changes to an object of kind Node
@@ -5096,7 +5096,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedNodeAsync (string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedNodeAsync (string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch individual changes to a list of PersistentVolumeClaim
@@ -5111,7 +5111,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchPersistentVolumeClaimList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchPersistentVolumeClaimList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch individual changes to a list of PersistentVolumeClaim
@@ -5126,7 +5126,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchPersistentVolumeClaimListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchPersistentVolumeClaimListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch individual changes to a list of PersistentVolume
@@ -5141,7 +5141,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchNamespacedPersistentVolumeList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchNamespacedPersistentVolumeList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch individual changes to a list of PersistentVolume
@@ -5156,7 +5156,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedPersistentVolumeListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedPersistentVolumeListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch changes to an object of kind PersistentVolume
@@ -5172,7 +5172,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchNamespacedPersistentVolume (string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchNamespacedPersistentVolume (string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch changes to an object of kind PersistentVolume
@@ -5188,7 +5188,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedPersistentVolumeAsync (string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedPersistentVolumeAsync (string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch individual changes to a list of Pod
@@ -5203,7 +5203,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchPodList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchPodList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch individual changes to a list of Pod
@@ -5218,7 +5218,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchPodListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchPodListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch individual changes to a list of PodTemplate
@@ -5233,7 +5233,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchPodTemplateList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchPodTemplateList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch individual changes to a list of PodTemplate
@@ -5248,7 +5248,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchPodTemplateListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchPodTemplateListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch individual changes to a list of ReplicationController
@@ -5263,7 +5263,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchReplicationControllerList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchReplicationControllerList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch individual changes to a list of ReplicationController
@@ -5278,7 +5278,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchReplicationControllerListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchReplicationControllerListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch individual changes to a list of ResourceQuota
@@ -5293,7 +5293,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchResourceQuotaList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchResourceQuotaList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch individual changes to a list of ResourceQuota
@@ -5308,7 +5308,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchResourceQuotaListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchResourceQuotaListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch individual changes to a list of Secret
@@ -5323,7 +5323,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchSecretList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchSecretList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch individual changes to a list of Secret
@@ -5338,7 +5338,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchSecretListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchSecretListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch individual changes to a list of ServiceAccount
@@ -5353,7 +5353,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchServiceAccountList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchServiceAccountList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch individual changes to a list of ServiceAccount
@@ -5368,7 +5368,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchServiceAccountListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchServiceAccountListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
         /// <summary>
         /// watch individual changes to a list of Service
@@ -5383,7 +5383,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        JsonWatchEvent WatchServiceList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        JsonWatchEvent WatchServiceList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
   
         /// <summary>
         /// watch individual changes to a list of Service
@@ -5398,7 +5398,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        System.Threading.Tasks.Task<JsonWatchEvent> WatchServiceListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds);
+        System.Threading.Tasks.Task<JsonWatchEvent> WatchServiceListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds);
         
     }
   
@@ -5559,7 +5559,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>V1ComponentStatusList</returns>            
-        public V1ComponentStatusList ListNamespacedComponentStatus (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public V1ComponentStatusList ListNamespacedComponentStatus (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -5619,7 +5619,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1ComponentStatusList</returns>
-        public async System.Threading.Tasks.Task<V1ComponentStatusList> ListNamespacedComponentStatusAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<V1ComponentStatusList> ListNamespacedComponentStatusAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -5782,7 +5782,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>V1EndpointsList</returns>            
-        public V1EndpointsList ListEndpoints (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public V1EndpointsList ListEndpoints (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -5842,7 +5842,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1EndpointsList</returns>
-        public async System.Threading.Tasks.Task<V1EndpointsList> ListEndpointsAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<V1EndpointsList> ListEndpointsAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -5899,7 +5899,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>V1EventList</returns>            
-        public V1EventList ListEvent (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public V1EventList ListEvent (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -5959,7 +5959,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1EventList</returns>
-        public async System.Threading.Tasks.Task<V1EventList> ListEventAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<V1EventList> ListEventAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -6016,7 +6016,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>V1LimitRangeList</returns>            
-        public V1LimitRangeList ListLimitRange (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public V1LimitRangeList ListLimitRange (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -6076,7 +6076,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1LimitRangeList</returns>
-        public async System.Threading.Tasks.Task<V1LimitRangeList> ListLimitRangeAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<V1LimitRangeList> ListLimitRangeAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -6133,7 +6133,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>V1NamespaceList</returns>            
-        public V1NamespaceList ListNamespacedNamespace (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public V1NamespaceList ListNamespacedNamespace (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -6193,7 +6193,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1NamespaceList</returns>
-        public async System.Threading.Tasks.Task<V1NamespaceList> ListNamespacedNamespaceAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<V1NamespaceList> ListNamespacedNamespaceAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -6472,7 +6472,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>V1EndpointsList</returns>            
-        public V1EndpointsList ListNamespacedEndpoints (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public V1EndpointsList ListNamespacedEndpoints (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -6537,7 +6537,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1EndpointsList</returns>
-        public async System.Threading.Tasks.Task<V1EndpointsList> ListNamespacedEndpointsAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<V1EndpointsList> ListNamespacedEndpointsAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling ListNamespacedEndpoints");
@@ -7200,7 +7200,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>V1EventList</returns>            
-        public V1EventList ListNamespacedEvent (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public V1EventList ListNamespacedEvent (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -7265,7 +7265,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1EventList</returns>
-        public async System.Threading.Tasks.Task<V1EventList> ListNamespacedEventAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<V1EventList> ListNamespacedEventAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling ListNamespacedEvent");
@@ -7928,7 +7928,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>V1LimitRangeList</returns>            
-        public V1LimitRangeList ListNamespacedLimitRange (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public V1LimitRangeList ListNamespacedLimitRange (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -7993,7 +7993,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1LimitRangeList</returns>
-        public async System.Threading.Tasks.Task<V1LimitRangeList> ListNamespacedLimitRangeAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<V1LimitRangeList> ListNamespacedLimitRangeAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling ListNamespacedLimitRange");
@@ -8656,7 +8656,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>V1PersistentVolumeClaimList</returns>            
-        public V1PersistentVolumeClaimList ListNamespacedPersistentVolumeClaim (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public V1PersistentVolumeClaimList ListNamespacedPersistentVolumeClaim (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -8721,7 +8721,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1PersistentVolumeClaimList</returns>
-        public async System.Threading.Tasks.Task<V1PersistentVolumeClaimList> ListNamespacedPersistentVolumeClaimAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<V1PersistentVolumeClaimList> ListNamespacedPersistentVolumeClaimAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling ListNamespacedPersistentVolumeClaim");
@@ -9508,7 +9508,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>V1PodList</returns>            
-        public V1PodList ListNamespacedPod (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public V1PodList ListNamespacedPod (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -9573,7 +9573,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1PodList</returns>
-        public async System.Threading.Tasks.Task<V1PodList> ListNamespacedPodAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<V1PodList> ListNamespacedPodAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling ListNamespacedPod");
@@ -10896,7 +10896,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="tailLines">If set, the number of lines from the end of the logs to show. If not specified, logs are shown from the creation of the container or sinceSeconds or sinceTime</param> 
         /// <param name="limitBytes">If set, the number of bytes to read from the server before terminating the log output. This may not display a complete final line of logging, and may return slightly more or slightly less than the specified limit.</param> 
         /// <returns>V1Pod</returns>            
-        public V1Pod ReadNamespacedPodLog (string _namespace, string name, string pretty, string container, bool? follow, bool? previous, string sinceSeconds, string sinceTime, bool? timestamps, string tailLines, string limitBytes)
+        public V1Pod ReadNamespacedPodLog (string _namespace, string name, string pretty, string container, bool? follow, bool? previous, int? sinceSeconds, string sinceTime, bool? timestamps, int? tailLines, int? limitBytes)
         {
             
             // verify the required parameter '_namespace' is set
@@ -10972,7 +10972,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="tailLines">If set, the number of lines from the end of the logs to show. If not specified, logs are shown from the creation of the container or sinceSeconds or sinceTime</param>
         /// <param name="limitBytes">If set, the number of bytes to read from the server before terminating the log output. This may not display a complete final line of logging, and may return slightly more or slightly less than the specified limit.</param>
         /// <returns>V1Pod</returns>
-        public async System.Threading.Tasks.Task<V1Pod> ReadNamespacedPodLogAsync (string _namespace, string name, string pretty, string container, bool? follow, bool? previous, string sinceSeconds, string sinceTime, bool? timestamps, string tailLines, string limitBytes)
+        public async System.Threading.Tasks.Task<V1Pod> ReadNamespacedPodLogAsync (string _namespace, string name, string pretty, string container, bool? follow, bool? previous, int? sinceSeconds, string sinceTime, bool? timestamps, int? tailLines, int? limitBytes)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling ReadNamespacedPodLog");
@@ -12819,7 +12819,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>V1PodTemplateList</returns>            
-        public V1PodTemplateList ListNamespacedPodTemplate (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public V1PodTemplateList ListNamespacedPodTemplate (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -12884,7 +12884,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1PodTemplateList</returns>
-        public async System.Threading.Tasks.Task<V1PodTemplateList> ListNamespacedPodTemplateAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<V1PodTemplateList> ListNamespacedPodTemplateAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling ListNamespacedPodTemplate");
@@ -13547,7 +13547,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>V1ReplicationControllerList</returns>            
-        public V1ReplicationControllerList ListNamespacedReplicationController (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public V1ReplicationControllerList ListNamespacedReplicationController (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -13612,7 +13612,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1ReplicationControllerList</returns>
-        public async System.Threading.Tasks.Task<V1ReplicationControllerList> ListNamespacedReplicationControllerAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<V1ReplicationControllerList> ListNamespacedReplicationControllerAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling ListNamespacedReplicationController");
@@ -14399,7 +14399,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>V1ResourceQuotaList</returns>            
-        public V1ResourceQuotaList ListNamespacedResourceQuota (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public V1ResourceQuotaList ListNamespacedResourceQuota (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -14464,7 +14464,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1ResourceQuotaList</returns>
-        public async System.Threading.Tasks.Task<V1ResourceQuotaList> ListNamespacedResourceQuotaAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<V1ResourceQuotaList> ListNamespacedResourceQuotaAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling ListNamespacedResourceQuota");
@@ -15251,7 +15251,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>V1SecretList</returns>            
-        public V1SecretList ListNamespacedSecret (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public V1SecretList ListNamespacedSecret (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -15316,7 +15316,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1SecretList</returns>
-        public async System.Threading.Tasks.Task<V1SecretList> ListNamespacedSecretAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<V1SecretList> ListNamespacedSecretAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling ListNamespacedSecret");
@@ -15979,7 +15979,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>V1ServiceAccountList</returns>            
-        public V1ServiceAccountList ListNamespacedServiceAccount (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public V1ServiceAccountList ListNamespacedServiceAccount (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -16044,7 +16044,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1ServiceAccountList</returns>
-        public async System.Threading.Tasks.Task<V1ServiceAccountList> ListNamespacedServiceAccountAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<V1ServiceAccountList> ListNamespacedServiceAccountAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling ListNamespacedServiceAccount");
@@ -16707,7 +16707,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>V1ServiceList</returns>            
-        public V1ServiceList ListNamespacedService (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public V1ServiceList ListNamespacedService (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -16772,7 +16772,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1ServiceList</returns>
-        public async System.Threading.Tasks.Task<V1ServiceList> ListNamespacedServiceAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<V1ServiceList> ListNamespacedServiceAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling ListNamespacedService");
@@ -18106,7 +18106,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>V1NodeList</returns>            
-        public V1NodeList ListNamespacedNode (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public V1NodeList ListNamespacedNode (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -18166,7 +18166,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1NodeList</returns>
-        public async System.Threading.Tasks.Task<V1NodeList> ListNamespacedNodeAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<V1NodeList> ListNamespacedNodeAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -18895,7 +18895,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>V1PersistentVolumeClaimList</returns>            
-        public V1PersistentVolumeClaimList ListPersistentVolumeClaim (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public V1PersistentVolumeClaimList ListPersistentVolumeClaim (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -18955,7 +18955,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1PersistentVolumeClaimList</returns>
-        public async System.Threading.Tasks.Task<V1PersistentVolumeClaimList> ListPersistentVolumeClaimAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<V1PersistentVolumeClaimList> ListPersistentVolumeClaimAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -19012,7 +19012,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>V1PersistentVolumeList</returns>            
-        public V1PersistentVolumeList ListNamespacedPersistentVolume (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public V1PersistentVolumeList ListNamespacedPersistentVolume (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -19072,7 +19072,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1PersistentVolumeList</returns>
-        public async System.Threading.Tasks.Task<V1PersistentVolumeList> ListNamespacedPersistentVolumeAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<V1PersistentVolumeList> ListNamespacedPersistentVolumeAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -19801,7 +19801,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>V1PodList</returns>            
-        public V1PodList ListPod (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public V1PodList ListPod (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -19861,7 +19861,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1PodList</returns>
-        public async System.Threading.Tasks.Task<V1PodList> ListPodAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<V1PodList> ListPodAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -19918,7 +19918,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>V1PodTemplateList</returns>            
-        public V1PodTemplateList ListPodTemplate (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public V1PodTemplateList ListPodTemplate (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -19978,7 +19978,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1PodTemplateList</returns>
-        public async System.Threading.Tasks.Task<V1PodTemplateList> ListPodTemplateAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<V1PodTemplateList> ListPodTemplateAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -24085,7 +24085,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>V1ReplicationControllerList</returns>            
-        public V1ReplicationControllerList ListReplicationController (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public V1ReplicationControllerList ListReplicationController (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -24145,7 +24145,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1ReplicationControllerList</returns>
-        public async System.Threading.Tasks.Task<V1ReplicationControllerList> ListReplicationControllerAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<V1ReplicationControllerList> ListReplicationControllerAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -24202,7 +24202,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>V1ResourceQuotaList</returns>            
-        public V1ResourceQuotaList ListResourceQuota (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public V1ResourceQuotaList ListResourceQuota (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -24262,7 +24262,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1ResourceQuotaList</returns>
-        public async System.Threading.Tasks.Task<V1ResourceQuotaList> ListResourceQuotaAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<V1ResourceQuotaList> ListResourceQuotaAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -24319,7 +24319,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>V1SecretList</returns>            
-        public V1SecretList ListSecret (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public V1SecretList ListSecret (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -24379,7 +24379,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1SecretList</returns>
-        public async System.Threading.Tasks.Task<V1SecretList> ListSecretAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<V1SecretList> ListSecretAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -24436,7 +24436,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>V1ServiceAccountList</returns>            
-        public V1ServiceAccountList ListServiceAccount (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public V1ServiceAccountList ListServiceAccount (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -24496,7 +24496,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1ServiceAccountList</returns>
-        public async System.Threading.Tasks.Task<V1ServiceAccountList> ListServiceAccountAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<V1ServiceAccountList> ListServiceAccountAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -24553,7 +24553,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>V1ServiceList</returns>            
-        public V1ServiceList ListService (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public V1ServiceList ListService (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -24613,7 +24613,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>V1ServiceList</returns>
-        public async System.Threading.Tasks.Task<V1ServiceList> ListServiceAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<V1ServiceList> ListServiceAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -24670,7 +24670,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchEndpointsList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchEndpointsList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -24730,7 +24730,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchEndpointsListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchEndpointsListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -24787,7 +24787,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchEventList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchEventList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -24847,7 +24847,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchEventListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchEventListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -24904,7 +24904,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchLimitRangeList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchLimitRangeList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -24964,7 +24964,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchLimitRangeListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchLimitRangeListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -25021,7 +25021,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchNamespacedNamespaceList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchNamespacedNamespaceList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -25081,7 +25081,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedNamespaceListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedNamespaceListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -25139,7 +25139,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchNamespacedEndpointsList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchNamespacedEndpointsList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -25204,7 +25204,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedEndpointsListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedEndpointsListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling WatchNamespacedEndpointsList");
@@ -25266,7 +25266,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchNamespacedEndpoints (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchNamespacedEndpoints (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -25336,7 +25336,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedEndpointsAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedEndpointsAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling WatchNamespacedEndpoints");
@@ -25400,7 +25400,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchNamespacedEventList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchNamespacedEventList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -25465,7 +25465,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedEventListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedEventListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling WatchNamespacedEventList");
@@ -25527,7 +25527,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchNamespacedEvent (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchNamespacedEvent (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -25597,7 +25597,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedEventAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedEventAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling WatchNamespacedEvent");
@@ -25661,7 +25661,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchNamespacedLimitRangeList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchNamespacedLimitRangeList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -25726,7 +25726,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedLimitRangeListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedLimitRangeListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling WatchNamespacedLimitRangeList");
@@ -25788,7 +25788,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchNamespacedLimitRange (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchNamespacedLimitRange (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -25858,7 +25858,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedLimitRangeAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedLimitRangeAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling WatchNamespacedLimitRange");
@@ -25922,7 +25922,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchNamespacedPersistentVolumeClaimList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchNamespacedPersistentVolumeClaimList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -25987,7 +25987,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedPersistentVolumeClaimListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedPersistentVolumeClaimListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling WatchNamespacedPersistentVolumeClaimList");
@@ -26049,7 +26049,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchNamespacedPersistentVolumeClaim (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchNamespacedPersistentVolumeClaim (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -26119,7 +26119,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedPersistentVolumeClaimAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedPersistentVolumeClaimAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling WatchNamespacedPersistentVolumeClaim");
@@ -26183,7 +26183,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchNamespacedPodList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchNamespacedPodList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -26248,7 +26248,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedPodListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedPodListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling WatchNamespacedPodList");
@@ -26310,7 +26310,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchNamespacedPod (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchNamespacedPod (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -26380,7 +26380,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedPodAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedPodAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling WatchNamespacedPod");
@@ -26444,7 +26444,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchNamespacedPodTemplateList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchNamespacedPodTemplateList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -26509,7 +26509,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedPodTemplateListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedPodTemplateListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling WatchNamespacedPodTemplateList");
@@ -26571,7 +26571,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchNamespacedPodTemplate (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchNamespacedPodTemplate (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -26641,7 +26641,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedPodTemplateAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedPodTemplateAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling WatchNamespacedPodTemplate");
@@ -26705,7 +26705,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchNamespacedReplicationControllerList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchNamespacedReplicationControllerList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -26770,7 +26770,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedReplicationControllerListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedReplicationControllerListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling WatchNamespacedReplicationControllerList");
@@ -26832,7 +26832,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchNamespacedReplicationController (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchNamespacedReplicationController (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -26902,7 +26902,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedReplicationControllerAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedReplicationControllerAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling WatchNamespacedReplicationController");
@@ -26966,7 +26966,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchNamespacedResourceQuotaList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchNamespacedResourceQuotaList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -27031,7 +27031,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedResourceQuotaListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedResourceQuotaListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling WatchNamespacedResourceQuotaList");
@@ -27093,7 +27093,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchNamespacedResourceQuota (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchNamespacedResourceQuota (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -27163,7 +27163,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedResourceQuotaAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedResourceQuotaAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling WatchNamespacedResourceQuota");
@@ -27227,7 +27227,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchNamespacedSecretList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchNamespacedSecretList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -27292,7 +27292,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedSecretListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedSecretListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling WatchNamespacedSecretList");
@@ -27354,7 +27354,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchNamespacedSecret (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchNamespacedSecret (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -27424,7 +27424,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedSecretAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedSecretAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling WatchNamespacedSecret");
@@ -27488,7 +27488,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchNamespacedServiceAccountList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchNamespacedServiceAccountList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -27553,7 +27553,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedServiceAccountListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedServiceAccountListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling WatchNamespacedServiceAccountList");
@@ -27615,7 +27615,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchNamespacedServiceAccount (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchNamespacedServiceAccount (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -27685,7 +27685,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedServiceAccountAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedServiceAccountAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling WatchNamespacedServiceAccount");
@@ -27749,7 +27749,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchNamespacedServiceList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchNamespacedServiceList (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -27814,7 +27814,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedServiceListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedServiceListAsync (string _namespace, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling WatchNamespacedServiceList");
@@ -27876,7 +27876,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchNamespacedService (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchNamespacedService (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter '_namespace' is set
@@ -27946,7 +27946,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedServiceAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedServiceAsync (string _namespace, string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter '_namespace' is set
             if (_namespace == null) throw new ApiException(400, "Missing required parameter '_namespace' when calling WatchNamespacedService");
@@ -28010,7 +28010,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchNamespacedNamespace (string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchNamespacedNamespace (string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter 'name' is set
@@ -28075,7 +28075,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedNamespaceAsync (string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedNamespaceAsync (string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter 'name' is set
             if (name == null) throw new ApiException(400, "Missing required parameter 'name' when calling WatchNamespacedNamespace");
@@ -28135,7 +28135,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchNamespacedNodeList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchNamespacedNodeList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -28195,7 +28195,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedNodeListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedNodeListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -28253,7 +28253,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchNamespacedNode (string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchNamespacedNode (string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter 'name' is set
@@ -28318,7 +28318,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedNodeAsync (string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedNodeAsync (string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter 'name' is set
             if (name == null) throw new ApiException(400, "Missing required parameter 'name' when calling WatchNamespacedNode");
@@ -28378,7 +28378,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchPersistentVolumeClaimList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchPersistentVolumeClaimList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -28438,7 +28438,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchPersistentVolumeClaimListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchPersistentVolumeClaimListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -28495,7 +28495,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchNamespacedPersistentVolumeList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchNamespacedPersistentVolumeList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -28555,7 +28555,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedPersistentVolumeListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedPersistentVolumeListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -28613,7 +28613,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchNamespacedPersistentVolume (string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchNamespacedPersistentVolume (string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
             // verify the required parameter 'name' is set
@@ -28678,7 +28678,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedPersistentVolumeAsync (string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchNamespacedPersistentVolumeAsync (string name, string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             // verify the required parameter 'name' is set
             if (name == null) throw new ApiException(400, "Missing required parameter 'name' when calling WatchNamespacedPersistentVolume");
@@ -28738,7 +28738,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchPodList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchPodList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -28798,7 +28798,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchPodListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchPodListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -28855,7 +28855,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchPodTemplateList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchPodTemplateList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -28915,7 +28915,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchPodTemplateListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchPodTemplateListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -28972,7 +28972,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchReplicationControllerList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchReplicationControllerList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -29032,7 +29032,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchReplicationControllerListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchReplicationControllerListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -29089,7 +29089,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchResourceQuotaList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchResourceQuotaList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -29149,7 +29149,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchResourceQuotaListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchResourceQuotaListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -29206,7 +29206,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchSecretList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchSecretList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -29266,7 +29266,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchSecretListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchSecretListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -29323,7 +29323,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchServiceAccountList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchServiceAccountList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -29383,7 +29383,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchServiceAccountListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchServiceAccountListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -29440,7 +29440,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param> 
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param> 
         /// <returns>JsonWatchEvent</returns>            
-        public JsonWatchEvent WatchServiceList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public JsonWatchEvent WatchServiceList (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     
@@ -29500,7 +29500,7 @@ namespace KubeNET.Swagger.Api
         /// <param name="resourceVersion">When specified with a watch call, shows changes that occur after that particular version of a resource. Defaults to changes from the beginning of history.</param>
         /// <param name="timeoutSeconds">Timeout for the list/watch call.</param>
         /// <returns>JsonWatchEvent</returns>
-        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchServiceListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, string timeoutSeconds)
+        public async System.Threading.Tasks.Task<JsonWatchEvent> WatchServiceListAsync (string pretty, string labelSelector, string fieldSelector, bool? watch, string resourceVersion, int? timeoutSeconds)
         {
             
     

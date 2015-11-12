@@ -14,6 +14,14 @@ namespace KubeNET.Swagger.Model {
   public class V1beta1PodSelector {
     
     /// <summary>
+    /// matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.
+    /// </summary>
+    /// <value>matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.</value>
+    [DataMember(Name="matchLabels", EmitDefaultValue=false)]
+    public Dictionary<string, string> MatchLabels { get; set; }
+
+    
+    /// <summary>
     /// matchExpressions is a list of pod selector requirements. The requirements are ANDed.
     /// </summary>
     /// <value>matchExpressions is a list of pod selector requirements. The requirements are ANDed.</value>
@@ -29,6 +37,8 @@ namespace KubeNET.Swagger.Model {
     public override string ToString()  {
       var sb = new StringBuilder();
       sb.Append("class V1beta1PodSelector {\n");
+      
+      sb.Append("  MatchLabels: ").Append(MatchLabels).Append("\n");
       
       sb.Append("  MatchExpressions: ").Append(MatchExpressions).Append("\n");
       

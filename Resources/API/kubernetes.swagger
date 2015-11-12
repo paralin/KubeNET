@@ -197,7 +197,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -303,7 +303,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -422,7 +422,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -700,7 +700,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -781,7 +781,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -848,7 +848,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -915,7 +915,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -1034,7 +1034,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -1312,7 +1312,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -1393,7 +1393,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -1460,7 +1460,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -1527,7 +1527,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -1646,7 +1646,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -1924,7 +1924,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -2005,7 +2005,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -2072,7 +2072,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -2139,7 +2139,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -2244,7 +2244,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -2487,7 +2487,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -2655,7 +2655,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -2760,7 +2760,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -3003,7 +3003,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -3530,7 +3530,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -3649,7 +3649,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -3927,7 +3927,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -4008,7 +4008,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -4075,7 +4075,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -4196,7 +4196,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -4301,7 +4301,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -4544,7 +4544,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -4665,7 +4665,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -4784,7 +4784,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -5062,7 +5062,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -5633,7 +5633,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -5700,7 +5700,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -6120,14 +6120,14 @@
             "description": "A relative time in seconds before the current time from which to show logs. If this value precedes the time a pod was started, only logs since the pod start will be returned. If this value is in the future, no logs will be returned. Only one of sinceSeconds or sinceTime may be specified.",
             "name": "sinceSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "query",
             "description": "An RFC3339 timestamp from which to show logs. If this value preceeds the time a pod was started, only logs since the pod start will be returned. If this value is in the future, no logs will be returned. Only one of sinceSeconds or sinceTime may be specified.",
             "name": "sinceTime",
             "required": false,
-            "type": "*unversioned.Time"
+            "type": "string"
           },
           {
             "in": "query",
@@ -6141,14 +6141,14 @@
             "description": "If set, the number of lines from the end of the logs to show. If not specified, logs are shown from the creation of the container or sinceSeconds or sinceTime",
             "name": "tailLines",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "query",
             "description": "If set, the number of bytes to read from the server before terminating the log output. This may not display a complete final line of logging, and may return slightly more or slightly less than the specified limit.",
             "name": "limitBytes",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -6933,7 +6933,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -7052,7 +7052,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -7330,7 +7330,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -7411,7 +7411,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -7478,7 +7478,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -7545,7 +7545,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -7664,7 +7664,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -7942,7 +7942,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -8023,7 +8023,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -8090,7 +8090,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -8211,7 +8211,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -8330,7 +8330,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -8608,7 +8608,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -8689,7 +8689,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -8756,7 +8756,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -8877,7 +8877,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -8996,7 +8996,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -9274,7 +9274,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -9355,7 +9355,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -9422,7 +9422,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -9489,7 +9489,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -9608,7 +9608,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -9886,7 +9886,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -9967,7 +9967,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -10034,7 +10034,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -10101,7 +10101,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -10220,7 +10220,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -10490,7 +10490,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -11061,7 +11061,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -11128,7 +11128,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -11215,7 +11215,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -11334,7 +11334,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -11612,7 +11612,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -11693,7 +11693,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -11760,7 +11760,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -11881,7 +11881,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -12000,7 +12000,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -12278,7 +12278,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -12359,7 +12359,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -12426,7 +12426,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -12547,7 +12547,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -12666,7 +12666,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -12944,7 +12944,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           },
           {
             "in": "path",
@@ -13025,7 +13025,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -13092,7 +13092,7 @@
             "description": "Timeout for the list/watch call.",
             "name": "timeoutSeconds",
             "required": false,
-            "type": "*int64"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -13423,9 +13423,17 @@
           "description": "Number of seconds allowed for this object to gracefully terminate before it will be removed from the system. Only set when deletionTimestamp is also set. May only be shortened. Read-only."
         },
         "labels": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
           "description": "Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://releases.k8s.io/HEAD/docs/user-guide/labels.md"
         },
         "annotations": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
           "description": "Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://releases.k8s.io/HEAD/docs/user-guide/annotations.md"
         }
       }
@@ -13946,18 +13954,38 @@
           "description": "Type of resource that this limit applies to."
         },
         "max": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
           "description": "Max usage constraints on this kind by resource name."
         },
         "min": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
           "description": "Min usage constraints on this kind by resource name."
         },
         "default": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
           "description": "Default resource requirement limit value by resource name if resource limit is omitted."
         },
         "defaultRequest": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
           "description": "DefaultRequest is the default resource requirement request value by resource name if resource request is omitted."
         },
         "maxLimitRequestRatio": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
           "description": "MaxLimitRequestRatio if specified, the named resource must have a request and limit that are both non-zero where limit divided by request is less than or equal to the enumerated value; this represents the max burst for the named resource."
         }
       }
@@ -14113,6 +14141,10 @@
       "description": "NodeStatus is information about the current status of a node.",
       "properties": {
         "capacity": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
           "description": "Capacity represents the available resources of a node. More info: http://releases.k8s.io/HEAD/docs/user-guide/persistent-volumes.md#capacity for more details."
         },
         "phase": {
@@ -14339,9 +14371,17 @@
       "description": "ResourceRequirements describes the compute resource requirements.",
       "properties": {
         "limits": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
           "description": "Limits describes the maximum amount of compute resources allowed. More info: http://releases.k8s.io/HEAD/docs/design/resources.md#resource-specifications"
         },
         "requests": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
           "description": "Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: http://releases.k8s.io/HEAD/docs/design/resources.md#resource-specifications"
         }
       }
@@ -14361,6 +14401,10 @@
           "description": "AccessModes contains the actual access modes the volume backing the PVC has. More info: http://releases.k8s.io/HEAD/docs/user-guide/persistent-volumes.md#access-modes-1"
         },
         "capacity": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
           "description": "Represents the actual resources of the underlying volume."
         }
       }
@@ -14421,6 +14465,10 @@
       "description": "PersistentVolumeSpec is the specification of a persistent volume.",
       "properties": {
         "capacity": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
           "description": "A description of the persistent volume's resources and capacity. More info: http://releases.k8s.io/HEAD/docs/user-guide/persistent-volumes.md#capacity"
         },
         "gcePersistentDisk": {
@@ -14880,6 +14928,10 @@
           "description": "Set DNS policy for containers within the pod. One of 'ClusterFirst' or 'Default'. Defaults to \"ClusterFirst\"."
         },
         "nodeSelector": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
           "description": "NodeSelector is a selector which must be true for the pod to fit on a node. Selector which must match a node's labels for the pod to be scheduled on that node. More info: http://releases.k8s.io/HEAD/docs/user-guide/node-selection/README.md"
         },
         "serviceAccountName": {
@@ -15273,7 +15325,7 @@
       }
     },
     "v1.Probe": {
-      "description": "Probe describes a liveness probe to be examined to the container.",
+      "description": "Probe describes a health check to be performed against a container to determine whether it is alive or ready to recieve traffic.",
       "properties": {
         "exec": {
           "$ref": "#/definitions/v1.ExecAction",
@@ -15295,7 +15347,22 @@
         "timeoutSeconds": {
           "$ref": "#/definitions/integer",
           "format": "int64",
-          "description": "Number of seconds after which liveness probes timeout. Defaults to 1 second. More info: http://releases.k8s.io/HEAD/docs/user-guide/pod-states.md#container-probes"
+          "description": "Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. More info: http://releases.k8s.io/HEAD/docs/user-guide/pod-states.md#container-probes"
+        },
+        "periodSeconds": {
+          "$ref": "#/definitions/integer",
+          "format": "int64",
+          "description": "How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1."
+        },
+        "successThreshold": {
+          "$ref": "#/definitions/integer",
+          "format": "int32",
+          "description": "Minimum consecutive successes for the probe to be considered successful after having failed. Defaults to 1. Must be 1 for liveness. Minimum value is 1."
+        },
+        "failureThreshold": {
+          "$ref": "#/definitions/integer",
+          "format": "int32",
+          "description": "Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1."
         }
       }
     },
@@ -15795,6 +15862,10 @@
           "description": "Replicas is the number of desired replicas. This is a pointer to distinguish between explicit zero and unspecified. Defaults to 1. More info: http://releases.k8s.io/HEAD/docs/user-guide/replication-controller.md#what-is-a-replication-controller"
         },
         "selector": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
           "description": "Selector is a label query over pods that should match the Replicas count. If Selector is empty, it is defaulted to the labels present on the Pod template. Label keys and values that must match in order to be controlled by this replication controller, if empty defaulted to labels on Pod template. More info: http://releases.k8s.io/HEAD/docs/user-guide/labels.md#label-selectors"
         },
         "template": {
@@ -15877,6 +15948,10 @@
       "description": "ResourceQuotaSpec defines the desired hard limits to enforce for Quota.",
       "properties": {
         "hard": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
           "description": "Hard is the set of desired hard limits for each named resource. More info: http://releases.k8s.io/HEAD/docs/design/admission_control_resource_quota.md#admissioncontrol-plugin-resourcequota"
         }
       }
@@ -15885,9 +15960,17 @@
       "description": "ResourceQuotaStatus defines the enforced hard limits and observed use.",
       "properties": {
         "hard": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
           "description": "Hard is the set of enforced hard limits for each named resource. More info: http://releases.k8s.io/HEAD/docs/design/admission_control_resource_quota.md#admissioncontrol-plugin-resourcequota"
         },
         "used": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
           "description": "Used is the current observed total usage of the resource in the namespace."
         }
       }
@@ -15935,6 +16018,10 @@
           "description": "Standard object's metadata. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#metadata"
         },
         "data": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
           "description": "Data contains the secret data. Each key must be a valid DNS_SUBDOMAIN or leading dot followed by valid DNS_SUBDOMAIN. The serialized form of the secret data is a base64 encoded string, representing the arbitrary (possibly non-string) data value here. Described in https://tools.ietf.org/html/rfc4648#section-4"
         },
         "type": {
@@ -16067,6 +16154,10 @@
           "description": "The list of ports that are exposed by this service. More info: http://releases.k8s.io/HEAD/docs/user-guide/services.md#virtual-ips-and-service-proxies"
         },
         "selector": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
           "description": "This service will route traffic to pods having labels matching this selector. Label keys and values that must match in order to receive traffic for this service. If empty, all pods are selected, if not specified, endpoints must be manually specified. More info: http://releases.k8s.io/HEAD/docs/user-guide/services.md#overview"
         },
         "clusterIP": {
@@ -16529,6 +16620,10 @@
       "description": "A pod selector is a label query over a set of pods. The result of matchLabels and matchExpressions are ANDed. An empty pod selector matches all objects. A null pod selector matches no objects.",
       "properties": {
         "matchLabels": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
           "description": "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed."
         },
         "matchExpressions": {
@@ -16679,6 +16774,10 @@
           "description": "actual number of observed instances of the scaled object."
         },
         "selector": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
           "description": "label query over pods that should match the replicas count. More info: http://releases.k8s.io/HEAD/docs/user-guide/labels.md#label-selectors"
         }
       }

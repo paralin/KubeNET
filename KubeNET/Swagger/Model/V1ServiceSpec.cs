@@ -22,6 +22,14 @@ namespace KubeNET.Swagger.Model {
 
     
     /// <summary>
+    /// This service will route traffic to pods having labels matching this selector. Label keys and values that must match in order to receive traffic for this service. If empty, all pods are selected, if not specified, endpoints must be manually specified. More info: http://releases.k8s.io/HEAD/docs/user-guide/services.md#overview
+    /// </summary>
+    /// <value>This service will route traffic to pods having labels matching this selector. Label keys and values that must match in order to receive traffic for this service. If empty, all pods are selected, if not specified, endpoints must be manually specified. More info: http://releases.k8s.io/HEAD/docs/user-guide/services.md#overview</value>
+    [DataMember(Name="selector", EmitDefaultValue=false)]
+    public Dictionary<string, string> Selector { get; set; }
+
+    
+    /// <summary>
     /// ClusterIP is usually assigned by the master and is the IP address of the service. If specified, it will be allocated to the service if it is unused or else creation of the service will fail. Valid values are None, empty string (\"\"), or a valid IP address. 'None' can be specified for a headless service when proxying is not required. Cannot be updated. More info: http://releases.k8s.io/HEAD/docs/user-guide/services.md#virtual-ips-and-service-proxies
     /// </summary>
     /// <value>ClusterIP is usually assigned by the master and is the IP address of the service. If specified, it will be allocated to the service if it is unused or else creation of the service will fail. Valid values are None, empty string (\"\"), or a valid IP address. 'None' can be specified for a headless service when proxying is not required. Cannot be updated. More info: http://releases.k8s.io/HEAD/docs/user-guide/services.md#virtual-ips-and-service-proxies</value>
@@ -79,6 +87,8 @@ namespace KubeNET.Swagger.Model {
       sb.Append("class V1ServiceSpec {\n");
       
       sb.Append("  Ports: ").Append(Ports).Append("\n");
+      
+      sb.Append("  Selector: ").Append(Selector).Append("\n");
       
       sb.Append("  ClusterIP: ").Append(ClusterIP).Append("\n");
       

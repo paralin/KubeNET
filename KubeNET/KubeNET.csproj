@@ -108,7 +108,7 @@
     <Folder Include="Exceptions\" />
     <Folder Include="Fixes\" />
   </ItemGroup>
-<ItemGroup generatedimports="">
+<ItemGroup>
  <Compile Include="Exceptions/NotKubernetesPodException.cs"/>
  <Compile Include="Fixes/UnversionedPatch.cs"/>
  <Compile Include="Fixes/V1ResourceRequirements.cs"/>
@@ -135,6 +135,7 @@
  <Compile Include="Swagger/Model/JsonWatchEvent.cs"/>
  <Compile Include="Swagger/Model/V1NodeList.cs"/>
  <Compile Include="Swagger/Model/V1DownwardAPIVolumeSource.cs"/>
+ <Compile Include="Swagger/Model/V1ResourceRequirements.cs"/>
  <Compile Include="Swagger/Model/V1ComponentCondition.cs"/>
  <Compile Include="Swagger/Model/V1ServiceAccount.cs"/>
  <Compile Include="Swagger/Model/V1beta1IngressRule.cs"/>
@@ -234,12 +235,14 @@
  <Compile Include="Swagger/Model/V1ServiceSpec.cs"/>
  <Compile Include="Swagger/Model/V1PodTemplateList.cs"/>
  <Compile Include="Swagger/Model/V1ContainerStateRunning.cs"/>
+ <Compile Include="Swagger/Model/V1ResourceQuotaStatus.cs"/>
  <Compile Include="Swagger/Model/V1EnvVarSource.cs"/>
  <Compile Include="Swagger/Model/V1RBDVolumeSource.cs"/>
  <Compile Include="Swagger/Model/V1ContainerStateWaiting.cs"/>
  <Compile Include="Swagger/Model/V1ISCSIVolumeSource.cs"/>
  <Compile Include="Swagger/Model/V1PodSecurityContext.cs"/>
  <Compile Include="Swagger/Model/V1NodeCondition.cs"/>
+ <Compile Include="Swagger/Model/V1ResourceQuotaSpec.cs"/>
  <Compile Include="Swagger/Model/V1Namespace.cs"/>
  <Compile Include="Swagger/Model/V1Binding.cs"/>
  <Compile Include="Swagger/Model/V1Probe.cs"/>

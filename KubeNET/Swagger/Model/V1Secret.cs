@@ -38,6 +38,14 @@ namespace KubeNET.Swagger.Model {
 
     
     /// <summary>
+    /// Data contains the secret data. Each key must be a valid DNS_SUBDOMAIN or leading dot followed by valid DNS_SUBDOMAIN. The serialized form of the secret data is a base64 encoded string, representing the arbitrary (possibly non-string) data value here. Described in https://tools.ietf.org/html/rfc4648#section-4
+    /// </summary>
+    /// <value>Data contains the secret data. Each key must be a valid DNS_SUBDOMAIN or leading dot followed by valid DNS_SUBDOMAIN. The serialized form of the secret data is a base64 encoded string, representing the arbitrary (possibly non-string) data value here. Described in https://tools.ietf.org/html/rfc4648#section-4</value>
+    [DataMember(Name="data", EmitDefaultValue=false)]
+    public Dictionary<string, string> Data { get; set; }
+
+    
+    /// <summary>
     /// Used to facilitate programmatic handling of secret data.
     /// </summary>
     /// <value>Used to facilitate programmatic handling of secret data.</value>
@@ -59,6 +67,8 @@ namespace KubeNET.Swagger.Model {
       sb.Append("  ApiVersion: ").Append(ApiVersion).Append("\n");
       
       sb.Append("  Metadata: ").Append(Metadata).Append("\n");
+      
+      sb.Append("  Data: ").Append(Data).Append("\n");
       
       sb.Append("  Type: ").Append(Type).Append("\n");
       

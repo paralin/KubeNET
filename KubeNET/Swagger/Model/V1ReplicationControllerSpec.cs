@@ -22,6 +22,14 @@ namespace KubeNET.Swagger.Model {
 
     
     /// <summary>
+    /// Selector is a label query over pods that should match the Replicas count. If Selector is empty, it is defaulted to the labels present on the Pod template. Label keys and values that must match in order to be controlled by this replication controller, if empty defaulted to labels on Pod template. More info: http://releases.k8s.io/HEAD/docs/user-guide/labels.md#label-selectors
+    /// </summary>
+    /// <value>Selector is a label query over pods that should match the Replicas count. If Selector is empty, it is defaulted to the labels present on the Pod template. Label keys and values that must match in order to be controlled by this replication controller, if empty defaulted to labels on Pod template. More info: http://releases.k8s.io/HEAD/docs/user-guide/labels.md#label-selectors</value>
+    [DataMember(Name="selector", EmitDefaultValue=false)]
+    public Dictionary<string, string> Selector { get; set; }
+
+    
+    /// <summary>
     /// Template is the object that describes the pod that will be created if insufficient replicas are detected. This takes precedence over a TemplateRef. More info: http://releases.k8s.io/HEAD/docs/user-guide/replication-controller.md#pod-template
     /// </summary>
     /// <value>Template is the object that describes the pod that will be created if insufficient replicas are detected. This takes precedence over a TemplateRef. More info: http://releases.k8s.io/HEAD/docs/user-guide/replication-controller.md#pod-template</value>
@@ -39,6 +47,8 @@ namespace KubeNET.Swagger.Model {
       sb.Append("class V1ReplicationControllerSpec {\n");
       
       sb.Append("  Replicas: ").Append(Replicas).Append("\n");
+      
+      sb.Append("  Selector: ").Append(Selector).Append("\n");
       
       sb.Append("  Template: ").Append(Template).Append("\n");
       
