@@ -4,7 +4,7 @@
   "description": "",
   "main": "convert.js",
   "dependencies": {
-    "swagger-converter": "^0.2.0"
+    "swagger-converter": "github:paralin/swagger-converter#bd91733cc6b873d1f55850be7dbdc821e44e213d"
   },
   "devDependencies": {},
   "scripts": {
