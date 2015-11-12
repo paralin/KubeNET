@@ -108,7 +108,7 @@
     <Folder Include="Exceptions\" />
     <Folder Include="Fixes\" />
   </ItemGroup>
-<ItemGroup generatedimports="">
+<ItemGroup>
  <Compile Include="Exceptions/NotKubernetesPodException.cs"/>
  <Compile Include="Fixes/UnversionedPatch.cs"/>
  <Compile Include="Fixes/V1ResourceRequirements.cs"/>
@@ -118,7 +118,6 @@
  <Compile Include="Fixes/V1ResourceQuotaStatus.cs"/>
  <Compile Include="Fixes/V1ResourceQuotaSpec.cs"/>
  <Compile Include="Kubernetes/KubernetesConfiguration.cs"/>
- <Compile Include="obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs"/>
  <Compile Include="Swagger/Api/ExtensionsApi.cs"/>
  <Compile Include="Swagger/Api/VersionApi.cs"/>
  <Compile Include="Swagger/Api/ApisApi.cs"/>
