@@ -1,12 +1,9 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
 
 namespace KubeNET.Swagger.Model
 {
-	public class UnversionedPatch
+	public class UnversionedPatch : JObject
 	{
-		public UnversionedPatch ()
-		{
-		}
 	}
 }
 
