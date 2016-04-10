@@ -130,7 +130,7 @@ namespace KubeNET.Swagger.Model {
     /// </summary>
     /// <value>AccessModes contains all ways the volume can be mounted. More info: http://releases.k8s.io/HEAD/docs/user-guide/persistent-volumes.md#access-modes</value>
     [DataMember(Name="accessModes", EmitDefaultValue=false)]
-    public List<V1PersistentVolumeAccessMode> AccessModes { get; set; }
+    public List<string> AccessModes { get; set; }
 
     
     /// <summary>

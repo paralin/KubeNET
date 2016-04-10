@@ -62,9 +62,9 @@ namespace KubeNET.Swagger.Model {
 
     
     /// <summary>
-    /// Container's ID in the format 'docker://<container_id>'
+    /// Container's ID in the format 'docker://container_id'
     /// </summary>
-    /// <value>Container's ID in the format 'docker://<container_id>'</value>
+    /// <value>Container's ID in the format 'docker://container_id'</value>
     [DataMember(Name="containerID", EmitDefaultValue=false)]
     public string ContainerID { get; set; }
 

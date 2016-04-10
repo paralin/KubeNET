@@ -70,9 +70,9 @@ namespace KubeNET.Swagger.Model {
 
     
     /// <summary>
-    /// Container's ID in the format 'docker://<container_id>'. More info: http://releases.k8s.io/HEAD/docs/user-guide/container-environment.md#container-information
+    /// Container's ID in the format 'docker://container_id'. More info: http://releases.k8s.io/HEAD/docs/user-guide/container-environment.md#container-information
     /// </summary>
-    /// <value>Container's ID in the format 'docker://<container_id>'. More info: http://releases.k8s.io/HEAD/docs/user-guide/container-environment.md#container-information</value>
+    /// <value>Container's ID in the format 'docker://container_id'. More info: http://releases.k8s.io/HEAD/docs/user-guide/container-environment.md#container-information</value>
     [DataMember(Name="containerID", EmitDefaultValue=false)]
     public string ContainerID { get; set; }
 

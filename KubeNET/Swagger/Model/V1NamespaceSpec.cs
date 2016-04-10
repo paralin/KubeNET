@@ -18,7 +18,7 @@ namespace KubeNET.Swagger.Model {
     /// </summary>
     /// <value>Finalizers is an opaque list of values that must be empty to permanently remove object from storage. More info: http://releases.k8s.io/HEAD/docs/design/namespaces.md#finalizers</value>
     [DataMember(Name="finalizers", EmitDefaultValue=false)]
-    public List<V1FinalizerName> Finalizers { get; set; }
+    public List<string> Finalizers { get; set; }
 
     
 

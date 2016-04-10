@@ -30,9 +30,9 @@ namespace KubeNET.Swagger.Model {
 
     
     /// <summary>
-    /// ID of the node assigned by the cloud provider in the format: <ProviderName>://<ProviderSpecificNodeID>
+    /// ID of the node assigned by the cloud provider in the format: ProviderName://ProviderSpecificNodeID
     /// </summary>
-    /// <value>ID of the node assigned by the cloud provider in the format: <ProviderName>://<ProviderSpecificNodeID></value>
+    /// <value>ID of the node assigned by the cloud provider in the format: ProviderName://ProviderSpecificNodeID</value>
     [DataMember(Name="providerID", EmitDefaultValue=false)]
     public string ProviderID { get; set; }
 

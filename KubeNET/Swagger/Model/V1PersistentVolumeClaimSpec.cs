@@ -18,7 +18,7 @@ namespace KubeNET.Swagger.Model {
     /// </summary>
     /// <value>AccessModes contains the desired access modes the volume should have. More info: http://releases.k8s.io/HEAD/docs/user-guide/persistent-volumes.md#access-modes-1</value>
     [DataMember(Name="accessModes", EmitDefaultValue=false)]
-    public List<V1PersistentVolumeAccessMode> AccessModes { get; set; }
+    public List<string> AccessModes { get; set; }
 
     
     /// <summary>

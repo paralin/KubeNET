@@ -22,17 +22,17 @@ namespace KubeNET.Swagger.Model {
 
     
     /// <summary>
-    /// Number of port to expose on the host. If specified, this must be a valid port number, 0 < x < 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.
+    /// Number of port to expose on the host. If specified, this must be a valid port number, 0 lt x lt 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.
     /// </summary>
-    /// <value>Number of port to expose on the host. If specified, this must be a valid port number, 0 < x < 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.</value>
+    /// <value>Number of port to expose on the host. If specified, this must be a valid port number, 0 lt x lt 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.</value>
     [DataMember(Name="hostPort", EmitDefaultValue=false)]
     public int? HostPort { get; set; }
 
     
     /// <summary>
-    /// Number of port to expose on the pod's IP address. This must be a valid port number, 0 < x < 65536.
+    /// Number of port to expose on the pod's IP address. This must be a valid port number, 0 lt x lt 65536.
     /// </summary>
-    /// <value>Number of port to expose on the pod's IP address. This must be a valid port number, 0 < x < 65536.</value>
+    /// <value>Number of port to expose on the pod's IP address. This must be a valid port number, 0 lt x lt 65536.</value>
     [DataMember(Name="containerPort", EmitDefaultValue=false)]
     public int? ContainerPort { get; set; }
 

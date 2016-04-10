@@ -26,7 +26,7 @@ namespace KubeNET.Swagger.Model {
     /// </summary>
     /// <value>A collection of filters that must match each object tracked by a quota. If not specified, the quota matches all objects.</value>
     [DataMember(Name="scopes", EmitDefaultValue=false)]
-    public List<V1ResourceQuotaScope> Scopes { get; set; }
+    public List<string> Scopes { get; set; }
 
     
 

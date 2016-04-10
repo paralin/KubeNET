@@ -18,8 +18,7 @@ namespace KubeNET.Swagger.Model {
     /// </summary>
     /// <value>Specifies the target UID.</value>
     [DataMember(Name="uid", EmitDefaultValue=false)]
-    public TypesUID Uid { get; set; }
-
+    public int Uid { get; set; }
     
 
     /// <summary>
