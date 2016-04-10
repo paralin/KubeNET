@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 namespace KubeNET.Swagger.Model {
 
   /// <summary>
-  /// DownwardAPIVolumeSource represents a volume containing downward API info
+  /// DownwardAPIVolumeSource represents a volume containing downward API info. Downward API volumes support ownership management and SELinux relabeling.
   /// </summary>
   [DataContract]
   public class V1DownwardAPIVolumeSource {

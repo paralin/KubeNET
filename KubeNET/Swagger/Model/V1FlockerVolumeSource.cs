@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 namespace KubeNET.Swagger.Model {
 
   /// <summary>
-  /// FlockerVolumeSource represents a Flocker volume mounted by the Flocker agent.
+  /// Represents a Flocker volume mounted by the Flocker agent. Flocker volumes do not support ownership management or SELinux relabeling.
   /// </summary>
   [DataContract]
   public class V1FlockerVolumeSource {

@@ -37,6 +37,14 @@ namespace KubeNET.Swagger.Model {
     public int? GracePeriodSeconds { get; set; }
 
     
+    /// <summary>
+    /// Must be fulfilled before a deletion is carried out. If not possible, a 409 Conflict status will be returned.
+    /// </summary>
+    /// <value>Must be fulfilled before a deletion is carried out. If not possible, a 409 Conflict status will be returned.</value>
+    [DataMember(Name="preconditions", EmitDefaultValue=false)]
+    public V1Preconditions Preconditions { get; set; }
+
+    
 
     /// <summary>
     /// Get the string presentation of the object
@@ -51,6 +59,8 @@ namespace KubeNET.Swagger.Model {
       sb.Append("  ApiVersion: ").Append(ApiVersion).Append("\n");
       
       sb.Append("  GracePeriodSeconds: ").Append(GracePeriodSeconds).Append("\n");
+      
+      sb.Append("  Preconditions: ").Append(Preconditions).Append("\n");
       
       sb.Append("}\n");
       return sb.ToString();

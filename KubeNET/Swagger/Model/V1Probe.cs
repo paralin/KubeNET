@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 namespace KubeNET.Swagger.Model {
 
   /// <summary>
-  /// Probe describes a health check to be performed against a container to determine whether it is alive or ready to recieve traffic.
+  /// Probe describes a health check to be performed against a container to determine whether it is alive or ready to receive traffic.
   /// </summary>
   [DataContract]
   public class V1Probe {

@@ -14,9 +14,9 @@ namespace KubeNET.Swagger.Model {
   public class V1NodeCondition {
     
     /// <summary>
-    /// Type of node condition, currently only Ready.
+    /// Type of node condition.
     /// </summary>
-    /// <value>Type of node condition, currently only Ready.</value>
+    /// <value>Type of node condition.</value>
     [DataMember(Name="type", EmitDefaultValue=false)]
     public string Type { get; set; }
 

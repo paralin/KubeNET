@@ -8,15 +8,15 @@ using Newtonsoft.Json;
 namespace KubeNET.Swagger.Model {
 
   /// <summary>
-  /// SecretVolumeSource adapts a Secret into a VolumeSource. More info: http://releases.k8s.io/HEAD/docs/design/secrets.md
+  /// Adapts a Secret into a volume.\n\nThe contents of the target Secret&#39;s Data field will be presented in a volume as files using the keys in the Data field as the file names. Secret volumes support ownership management and SELinux relabeling.
   /// </summary>
   [DataContract]
   public class V1SecretVolumeSource {
     
     /// <summary>
-    /// SecretName is the name of a secret in the pod's namespace. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#secrets
+    /// Name of the secret in the pod's namespace to use. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#secrets
     /// </summary>
-    /// <value>SecretName is the name of a secret in the pod's namespace. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#secrets</value>
+    /// <value>Name of the secret in the pod's namespace to use. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#secrets</value>
     [DataMember(Name="secretName", EmitDefaultValue=false)]
     public string SecretName { get; set; }
 

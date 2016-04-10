@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 namespace KubeNET.Swagger.Model {
 
   /// <summary>
-  /// ISCSIVolumeSource describes an ISCSI Disk can only be mounted as read/write once.
+  /// Represents an ISCSI disk. ISCSI volumes can only be mounted as read/write once. ISCSI volumes support ownership management and SELinux relabeling.
   /// </summary>
   [DataContract]
   public class V1ISCSIVolumeSource {
@@ -38,9 +38,17 @@ namespace KubeNET.Swagger.Model {
 
     
     /// <summary>
-    /// Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: \"ext4\", \"xfs\", \"ntfs\". More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#iscsi
+    /// Optional: Defaults to 'default' (tcp). iSCSI interface name that uses an iSCSI transport.
     /// </summary>
-    /// <value>Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: \"ext4\", \"xfs\", \"ntfs\". More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#iscsi</value>
+    /// <value>Optional: Defaults to 'default' (tcp). iSCSI interface name that uses an iSCSI transport.</value>
+    [DataMember(Name="iscsiInterface", EmitDefaultValue=false)]
+    public string IscsiInterface { get; set; }
+
+    
+    /// <summary>
+    /// Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#iscsi
+    /// </summary>
+    /// <value>Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified. More info: http://releases.k8s.io/HEAD/docs/user-guide/volumes.md#iscsi</value>
     [DataMember(Name="fsType", EmitDefaultValue=false)]
     public string FsType { get; set; }
 
@@ -67,6 +75,8 @@ namespace KubeNET.Swagger.Model {
       sb.Append("  Iqn: ").Append(Iqn).Append("\n");
       
       sb.Append("  Lun: ").Append(Lun).Append("\n");
+      
+      sb.Append("  IscsiInterface: ").Append(IscsiInterface).Append("\n");
       
       sb.Append("  FsType: ").Append(FsType).Append("\n");
       

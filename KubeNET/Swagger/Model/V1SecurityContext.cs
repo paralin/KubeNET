@@ -53,6 +53,14 @@ namespace KubeNET.Swagger.Model {
     public bool? RunAsNonRoot { get; set; }
 
     
+    /// <summary>
+    /// Whether this container has a read-only root filesystem. Default is false.
+    /// </summary>
+    /// <value>Whether this container has a read-only root filesystem. Default is false.</value>
+    [DataMember(Name="readOnlyRootFilesystem", EmitDefaultValue=false)]
+    public bool? ReadOnlyRootFilesystem { get; set; }
+
+    
 
     /// <summary>
     /// Get the string presentation of the object
@@ -71,6 +79,8 @@ namespace KubeNET.Swagger.Model {
       sb.Append("  RunAsUser: ").Append(RunAsUser).Append("\n");
       
       sb.Append("  RunAsNonRoot: ").Append(RunAsNonRoot).Append("\n");
+      
+      sb.Append("  ReadOnlyRootFilesystem: ").Append(ReadOnlyRootFilesystem).Append("\n");
       
       sb.Append("}\n");
       return sb.ToString();

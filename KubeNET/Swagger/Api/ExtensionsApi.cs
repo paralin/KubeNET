@@ -3,6 +3,7 @@ using System.IO;
 using System.Collections.Generic;
 using RestSharp;
 using KubeNET.Swagger.Client;
+using KubeNET.Swagger.Model;
 
 namespace KubeNET.Swagger.Api
 {
@@ -19,8 +20,8 @@ namespace KubeNET.Swagger.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <returns></returns>
-        void GetAPIGroup ();
+        /// <returns>UnversionedAPIGroup</returns>
+        UnversionedAPIGroup GetAPIGroup ();
   
         /// <summary>
         /// get information of a group
@@ -28,8 +29,8 @@ namespace KubeNET.Swagger.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <returns></returns>
-        System.Threading.Tasks.Task GetAPIGroupAsync ();
+        /// <returns>UnversionedAPIGroup</returns>
+        System.Threading.Tasks.Task<UnversionedAPIGroup> GetAPIGroupAsync ();
         
     }
   
@@ -89,8 +90,8 @@ namespace KubeNET.Swagger.Api
         /// <summary>
         /// get information of a group 
         /// </summary>
-        /// <returns></returns>            
-        public void GetAPIGroup ()
+        /// <returns>UnversionedAPIGroup</returns>            
+        public UnversionedAPIGroup GetAPIGroup ()
         {
             
     
@@ -105,7 +106,7 @@ namespace KubeNET.Swagger.Api
 
             // to determine the Accept header
             String[] http_header_accepts = new String[] {
-                "application/json"
+                "application/json", "application/yaml"
             };
             String http_header_accept = ApiClient.SelectHeaderAccept(http_header_accepts);
             if (http_header_accept != null)
@@ -131,14 +132,14 @@ namespace KubeNET.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GetAPIGroup: " + response.ErrorMessage, response.ErrorMessage);
     
-            return;
+            return (UnversionedAPIGroup) ApiClient.Deserialize(response, typeof(UnversionedAPIGroup));
         }
     
         /// <summary>
         /// get information of a group 
         /// </summary>
-        /// <returns></returns>
-        public async System.Threading.Tasks.Task GetAPIGroupAsync ()
+        /// <returns>UnversionedAPIGroup</returns>
+        public async System.Threading.Tasks.Task<UnversionedAPIGroup> GetAPIGroupAsync ()
         {
             
     
@@ -153,7 +154,7 @@ namespace KubeNET.Swagger.Api
 
             // to determine the Accept header
             String[] http_header_accepts = new String[] {
-                "application/json"
+                "application/json", "application/yaml"
             };
             String http_header_accept = ApiClient.SelectHeaderAccept(http_header_accepts);
             if (http_header_accept != null)
@@ -176,8 +177,7 @@ namespace KubeNET.Swagger.Api
             if (((int)response.StatusCode) >= 400)
                 throw new ApiException ((int)response.StatusCode, "Error calling GetAPIGroup: " + response.Content, response.Content);
 
-            
-            return;
+            return (UnversionedAPIGroup) ApiClient.Deserialize(response, typeof(UnversionedAPIGroup));
         }
         
     }

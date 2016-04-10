@@ -14,11 +14,27 @@ namespace KubeNET.Swagger.Model {
   public class V1EnvVarSource {
     
     /// <summary>
-    /// Selects a field of the pod. Only name and namespace are supported.
+    /// Selects a field of the pod; only name and namespace are supported.
     /// </summary>
-    /// <value>Selects a field of the pod. Only name and namespace are supported.</value>
+    /// <value>Selects a field of the pod; only name and namespace are supported.</value>
     [DataMember(Name="fieldRef", EmitDefaultValue=false)]
     public V1ObjectFieldSelector FieldRef { get; set; }
+
+    
+    /// <summary>
+    /// Selects a key of a ConfigMap.
+    /// </summary>
+    /// <value>Selects a key of a ConfigMap.</value>
+    [DataMember(Name="configMapKeyRef", EmitDefaultValue=false)]
+    public V1ConfigMapKeySelector ConfigMapKeyRef { get; set; }
+
+    
+    /// <summary>
+    /// Selects a key of a secret in the pod's namespace
+    /// </summary>
+    /// <value>Selects a key of a secret in the pod's namespace</value>
+    [DataMember(Name="secretKeyRef", EmitDefaultValue=false)]
+    public V1SecretKeySelector SecretKeyRef { get; set; }
 
     
 
@@ -31,6 +47,10 @@ namespace KubeNET.Swagger.Model {
       sb.Append("class V1EnvVarSource {\n");
       
       sb.Append("  FieldRef: ").Append(FieldRef).Append("\n");
+      
+      sb.Append("  ConfigMapKeyRef: ").Append(ConfigMapKeyRef).Append("\n");
+      
+      sb.Append("  SecretKeyRef: ").Append(SecretKeyRef).Append("\n");
       
       sb.Append("}\n");
       return sb.ToString();

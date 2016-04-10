@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 namespace KubeNET.Swagger.Model {
 
   /// <summary>
-  /// HostPathVolumeSource represents bare host directory volume.
+  /// Represents a host path mapped into a pod. Host path volumes do not support ownership management or SELinux relabeling.
   /// </summary>
   [DataContract]
   public class V1HostPathVolumeSource {

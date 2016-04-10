@@ -29,6 +29,14 @@ namespace KubeNET.Swagger.Model {
     public Dictionary<string, string> Selector { get; set; }
 
     
+    /// <summary>
+    /// label selector for pods that should match the replicas count. This is a serializated version of both map-based and more expressive set-based selectors. This is done to avoid introspection in the clients. The string will be in the same format as the query-param syntax. If the target type only supports map-based selectors, both this field and map-based selector field are populated. More info: http://releases.k8s.io/HEAD/docs/user-guide/labels.md#label-selectors
+    /// </summary>
+    /// <value>label selector for pods that should match the replicas count. This is a serializated version of both map-based and more expressive set-based selectors. This is done to avoid introspection in the clients. The string will be in the same format as the query-param syntax. If the target type only supports map-based selectors, both this field and map-based selector field are populated. More info: http://releases.k8s.io/HEAD/docs/user-guide/labels.md#label-selectors</value>
+    [DataMember(Name="targetSelector", EmitDefaultValue=false)]
+    public string TargetSelector { get; set; }
+
+    
 
     /// <summary>
     /// Get the string presentation of the object
@@ -41,6 +49,8 @@ namespace KubeNET.Swagger.Model {
       sb.Append("  Replicas: ").Append(Replicas).Append("\n");
       
       sb.Append("  Selector: ").Append(Selector).Append("\n");
+      
+      sb.Append("  TargetSelector: ").Append(TargetSelector).Append("\n");
       
       sb.Append("}\n");
       return sb.ToString();

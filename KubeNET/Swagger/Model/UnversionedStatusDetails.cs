@@ -22,6 +22,14 @@ namespace KubeNET.Swagger.Model {
 
     
     /// <summary>
+    /// The group attribute of the resource associated with the status StatusReason.
+    /// </summary>
+    /// <value>The group attribute of the resource associated with the status StatusReason.</value>
+    [DataMember(Name="group", EmitDefaultValue=false)]
+    public string Group { get; set; }
+
+    
+    /// <summary>
     /// The kind attribute of the resource associated with the status StatusReason. On some operations may differ from the requested resource Kind. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#types-kinds
     /// </summary>
     /// <value>The kind attribute of the resource associated with the status StatusReason. On some operations may differ from the requested resource Kind. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#types-kinds</value>
@@ -55,6 +63,8 @@ namespace KubeNET.Swagger.Model {
       sb.Append("class UnversionedStatusDetails {\n");
       
       sb.Append("  Name: ").Append(Name).Append("\n");
+      
+      sb.Append("  Group: ").Append(Group).Append("\n");
       
       sb.Append("  Kind: ").Append(Kind).Append("\n");
       

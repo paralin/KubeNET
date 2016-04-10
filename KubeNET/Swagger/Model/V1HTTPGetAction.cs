@@ -30,9 +30,9 @@ namespace KubeNET.Swagger.Model {
 
     
     /// <summary>
-    /// Host name to connect to, defaults to the pod IP.
+    /// Host name to connect to, defaults to the pod IP. You probably want to set \"Host\" in httpHeaders instead.
     /// </summary>
-    /// <value>Host name to connect to, defaults to the pod IP.</value>
+    /// <value>Host name to connect to, defaults to the pod IP. You probably want to set \"Host\" in httpHeaders instead.</value>
     [DataMember(Name="host", EmitDefaultValue=false)]
     public string Host { get; set; }
 
@@ -43,6 +43,14 @@ namespace KubeNET.Swagger.Model {
     /// <value>Scheme to use for connecting to the host. Defaults to HTTP.</value>
     [DataMember(Name="scheme", EmitDefaultValue=false)]
     public string Scheme { get; set; }
+
+    
+    /// <summary>
+    /// Custom headers to set in the request. HTTP allows repeated headers.
+    /// </summary>
+    /// <value>Custom headers to set in the request. HTTP allows repeated headers.</value>
+    [DataMember(Name="httpHeaders", EmitDefaultValue=false)]
+    public List<V1HTTPHeader> HttpHeaders { get; set; }
 
     
 
@@ -61,6 +69,8 @@ namespace KubeNET.Swagger.Model {
       sb.Append("  Host: ").Append(Host).Append("\n");
       
       sb.Append("  Scheme: ").Append(Scheme).Append("\n");
+      
+      sb.Append("  HttpHeaders: ").Append(HttpHeaders).Append("\n");
       
       sb.Append("}\n");
       return sb.ToString();

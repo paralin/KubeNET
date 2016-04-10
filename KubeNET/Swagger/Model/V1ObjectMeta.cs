@@ -62,9 +62,9 @@ namespace KubeNET.Swagger.Model {
 
     
     /// <summary>
-    /// A sequence number representing a specific generation of the desired state. Currently only implemented by replication controllers. Populated by the system. Read-only.
+    /// A sequence number representing a specific generation of the desired state. Populated by the system. Read-only.
     /// </summary>
-    /// <value>A sequence number representing a specific generation of the desired state. Currently only implemented by replication controllers. Populated by the system. Read-only.</value>
+    /// <value>A sequence number representing a specific generation of the desired state. Populated by the system. Read-only.</value>
     [DataMember(Name="generation", EmitDefaultValue=false)]
     public int? Generation { get; set; }
 

@@ -22,6 +22,14 @@ namespace KubeNET.Swagger.Model {
 
     
     /// <summary>
+    /// TLS configuration. Currently the Ingress only supports a single TLS port, 443. If multiple members of this list specify different hosts, they will be multiplexed on the same port according to the hostname specified through the SNI TLS extension, if the ingress controller fulfilling the ingress supports SNI.
+    /// </summary>
+    /// <value>TLS configuration. Currently the Ingress only supports a single TLS port, 443. If multiple members of this list specify different hosts, they will be multiplexed on the same port according to the hostname specified through the SNI TLS extension, if the ingress controller fulfilling the ingress supports SNI.</value>
+    [DataMember(Name="tls", EmitDefaultValue=false)]
+    public List<V1beta1IngressTLS> Tls { get; set; }
+
+    
+    /// <summary>
     /// A list of host rules used to configure the Ingress. If unspecified, or no rule matches, all traffic is sent to the default backend.
     /// </summary>
     /// <value>A list of host rules used to configure the Ingress. If unspecified, or no rule matches, all traffic is sent to the default backend.</value>
@@ -39,6 +47,8 @@ namespace KubeNET.Swagger.Model {
       sb.Append("class V1beta1IngressSpec {\n");
       
       sb.Append("  Backend: ").Append(Backend).Append("\n");
+      
+      sb.Append("  Tls: ").Append(Tls).Append("\n");
       
       sb.Append("  Rules: ").Append(Rules).Append("\n");
       

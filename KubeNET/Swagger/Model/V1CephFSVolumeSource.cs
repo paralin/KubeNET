@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 namespace KubeNET.Swagger.Model {
 
   /// <summary>
-  /// CephFSVolumeSource represents a Ceph Filesystem Mount that lasts the lifetime of a pod
+  /// Represents a Ceph Filesystem mount that lasts the lifetime of a pod Cephfs volumes do not support ownership management or SELinux relabeling.
   /// </summary>
   [DataContract]
   public class V1CephFSVolumeSource {
@@ -19,6 +19,14 @@ namespace KubeNET.Swagger.Model {
     /// <value>Required: Monitors is a collection of Ceph monitors More info: http://releases.k8s.io/HEAD/examples/cephfs/README.md#how-to-use-it</value>
     [DataMember(Name="monitors", EmitDefaultValue=false)]
     public List<string> Monitors { get; set; }
+
+    
+    /// <summary>
+    /// Optional: Used as the mounted root, rather than the full Ceph tree, default is /
+    /// </summary>
+    /// <value>Optional: Used as the mounted root, rather than the full Ceph tree, default is /</value>
+    [DataMember(Name="path", EmitDefaultValue=false)]
+    public string Path { get; set; }
 
     
     /// <summary>
@@ -63,6 +71,8 @@ namespace KubeNET.Swagger.Model {
       sb.Append("class V1CephFSVolumeSource {\n");
       
       sb.Append("  Monitors: ").Append(Monitors).Append("\n");
+      
+      sb.Append("  Path: ").Append(Path).Append("\n");
       
       sb.Append("  User: ").Append(User).Append("\n");
       

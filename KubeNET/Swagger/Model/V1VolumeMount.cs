@@ -30,9 +30,9 @@ namespace KubeNET.Swagger.Model {
 
     
     /// <summary>
-    /// Path within the container at which the volume should be mounted.
+    /// Path within the container at which the volume should be mounted.  Must not contain ':'.
     /// </summary>
-    /// <value>Path within the container at which the volume should be mounted.</value>
+    /// <value>Path within the container at which the volume should be mounted.  Must not contain ':'.</value>
     [DataMember(Name="mountPath", EmitDefaultValue=false)]
     public string MountPath { get; set; }
 

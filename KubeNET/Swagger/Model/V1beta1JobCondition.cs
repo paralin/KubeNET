@@ -14,9 +14,9 @@ namespace KubeNET.Swagger.Model {
   public class V1beta1JobCondition {
     
     /// <summary>
-    /// Type of job condition, currently only Complete.
+    /// Type of job condition, Complete or Failed.
     /// </summary>
-    /// <value>Type of job condition, currently only Complete.</value>
+    /// <value>Type of job condition, Complete or Failed.</value>
     [DataMember(Name="type", EmitDefaultValue=false)]
     public string Type { get; set; }
 

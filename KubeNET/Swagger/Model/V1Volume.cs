@@ -110,6 +110,14 @@ namespace KubeNET.Swagger.Model {
 
     
     /// <summary>
+    /// FlexVolume represents a generic volume resource that is provisioned/attached using a exec based plugin. This is an alpha feature and may change in future.
+    /// </summary>
+    /// <value>FlexVolume represents a generic volume resource that is provisioned/attached using a exec based plugin. This is an alpha feature and may change in future.</value>
+    [DataMember(Name="flexVolume", EmitDefaultValue=false)]
+    public V1FlexVolumeSource FlexVolume { get; set; }
+
+    
+    /// <summary>
     /// Cinder represents a cinder volume attached and mounted on kubelets host machine More info: http://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
     /// </summary>
     /// <value>Cinder represents a cinder volume attached and mounted on kubelets host machine More info: http://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md</value>
@@ -149,6 +157,22 @@ namespace KubeNET.Swagger.Model {
     public V1FCVolumeSource Fc { get; set; }
 
     
+    /// <summary>
+    /// AzureFile represents an Azure File Service mount on the host and bind mount to the pod.
+    /// </summary>
+    /// <value>AzureFile represents an Azure File Service mount on the host and bind mount to the pod.</value>
+    [DataMember(Name="azureFile", EmitDefaultValue=false)]
+    public V1AzureFileVolumeSource AzureFile { get; set; }
+
+    
+    /// <summary>
+    /// ConfigMap represents a configMap that should populate this volume
+    /// </summary>
+    /// <value>ConfigMap represents a configMap that should populate this volume</value>
+    [DataMember(Name="configMap", EmitDefaultValue=false)]
+    public V1ConfigMapVolumeSource ConfigMap { get; set; }
+
+    
 
     /// <summary>
     /// Get the string presentation of the object
@@ -182,6 +206,8 @@ namespace KubeNET.Swagger.Model {
       
       sb.Append("  Rbd: ").Append(Rbd).Append("\n");
       
+      sb.Append("  FlexVolume: ").Append(FlexVolume).Append("\n");
+      
       sb.Append("  Cinder: ").Append(Cinder).Append("\n");
       
       sb.Append("  Cephfs: ").Append(Cephfs).Append("\n");
@@ -191,6 +217,10 @@ namespace KubeNET.Swagger.Model {
       sb.Append("  DownwardAPI: ").Append(DownwardAPI).Append("\n");
       
       sb.Append("  Fc: ").Append(Fc).Append("\n");
+      
+      sb.Append("  AzureFile: ").Append(AzureFile).Append("\n");
+      
+      sb.Append("  ConfigMap: ").Append(ConfigMap).Append("\n");
       
       sb.Append("}\n");
       return sb.ToString();

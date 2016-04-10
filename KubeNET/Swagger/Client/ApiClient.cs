@@ -1,9 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text.RegularExpressions;
 using System.IO;
+using System.Web;
 using System.Linq;
+using System.Net;
+using System.Text;
 using Newtonsoft.Json;
 using RestSharp;
 using RestSharp.Extensions;
@@ -21,7 +25,7 @@ namespace KubeNET.Swagger.Client
         /// Initializes a new instance of the <see cref="ApiClient" /> class.
         /// </summary>
         /// <param name="basePath">The base path.</param>
-        public ApiClient(String basePath="https://10.10.10.10:6443/")
+        public ApiClient(String basePath="https://10.10.10.10:443/")
         {
             BasePath = basePath;
             RestClient = new RestClient(BasePath);

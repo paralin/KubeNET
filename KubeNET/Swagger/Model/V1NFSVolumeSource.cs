@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 namespace KubeNET.Swagger.Model {
 
   /// <summary>
-  /// NFSVolumeSource represents an NFS mount that lasts the lifetime of a pod
+  /// Represents an NFS mount that lasts the lifetime of a pod. NFS volumes do not support ownership management or SELinux relabeling.
   /// </summary>
   [DataContract]
   public class V1NFSVolumeSource {

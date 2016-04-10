@@ -21,6 +21,14 @@ namespace KubeNET.Swagger.Model {
     public Dictionary<string, string> Hard { get; set; }
 
     
+    /// <summary>
+    /// A collection of filters that must match each object tracked by a quota. If not specified, the quota matches all objects.
+    /// </summary>
+    /// <value>A collection of filters that must match each object tracked by a quota. If not specified, the quota matches all objects.</value>
+    [DataMember(Name="scopes", EmitDefaultValue=false)]
+    public List<V1ResourceQuotaScope> Scopes { get; set; }
+
+    
 
     /// <summary>
     /// Get the string presentation of the object
@@ -31,6 +39,8 @@ namespace KubeNET.Swagger.Model {
       sb.Append("class V1ResourceQuotaSpec {\n");
       
       sb.Append("  Hard: ").Append(Hard).Append("\n");
+      
+      sb.Append("  Scopes: ").Append(Scopes).Append("\n");
       
       sb.Append("}\n");
       return sb.ToString();

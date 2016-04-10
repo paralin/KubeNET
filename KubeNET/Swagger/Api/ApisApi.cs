@@ -3,6 +3,7 @@ using System.IO;
 using System.Collections.Generic;
 using RestSharp;
 using KubeNET.Swagger.Client;
+using KubeNET.Swagger.Model;
 
 namespace KubeNET.Swagger.Api
 {
@@ -19,8 +20,8 @@ namespace KubeNET.Swagger.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <returns></returns>
-        void GetAPIVersions ();
+        /// <returns>UnversionedAPIGroupList</returns>
+        UnversionedAPIGroupList GetAPIVersions ();
   
         /// <summary>
         /// get available API versions
@@ -28,8 +29,8 @@ namespace KubeNET.Swagger.Api
         /// <remarks>
         /// 
         /// </remarks>
-        /// <returns></returns>
-        System.Threading.Tasks.Task GetAPIVersionsAsync ();
+        /// <returns>UnversionedAPIGroupList</returns>
+        System.Threading.Tasks.Task<UnversionedAPIGroupList> GetAPIVersionsAsync ();
         
     }
   
@@ -89,8 +90,8 @@ namespace KubeNET.Swagger.Api
         /// <summary>
         /// get available API versions 
         /// </summary>
-        /// <returns></returns>            
-        public void GetAPIVersions ()
+        /// <returns>UnversionedAPIGroupList</returns>            
+        public UnversionedAPIGroupList GetAPIVersions ()
         {
             
     
@@ -105,7 +106,7 @@ namespace KubeNET.Swagger.Api
 
             // to determine the Accept header
             String[] http_header_accepts = new String[] {
-                "application/json"
+                "application/json", "application/yaml"
             };
             String http_header_accept = ApiClient.SelectHeaderAccept(http_header_accepts);
             if (http_header_accept != null)
@@ -131,14 +132,14 @@ namespace KubeNET.Swagger.Api
             else if (((int)response.StatusCode) == 0)
                 throw new ApiException ((int)response.StatusCode, "Error calling GetAPIVersions: " + response.ErrorMessage, response.ErrorMessage);
     
-            return;
+            return (UnversionedAPIGroupList) ApiClient.Deserialize(response, typeof(UnversionedAPIGroupList));
         }
     
         /// <summary>
         /// get available API versions 
         /// </summary>
-        /// <returns></returns>
-        public async System.Threading.Tasks.Task GetAPIVersionsAsync ()
+        /// <returns>UnversionedAPIGroupList</returns>
+        public async System.Threading.Tasks.Task<UnversionedAPIGroupList> GetAPIVersionsAsync ()
         {
             
     
@@ -153,7 +154,7 @@ namespace KubeNET.Swagger.Api
 
             // to determine the Accept header
             String[] http_header_accepts = new String[] {
-                "application/json"
+                "application/json", "application/yaml"
             };
             String http_header_accept = ApiClient.SelectHeaderAccept(http_header_accepts);
             if (http_header_accept != null)
@@ -176,8 +177,7 @@ namespace KubeNET.Swagger.Api
             if (((int)response.StatusCode) >= 400)
                 throw new ApiException ((int)response.StatusCode, "Error calling GetAPIVersions: " + response.Content, response.Content);
 
-            
-            return;
+            return (UnversionedAPIGroupList) ApiClient.Deserialize(response, typeof(UnversionedAPIGroupList));
         }
         
     }

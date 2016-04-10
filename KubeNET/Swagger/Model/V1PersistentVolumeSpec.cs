@@ -110,6 +110,22 @@ namespace KubeNET.Swagger.Model {
 
     
     /// <summary>
+    /// FlexVolume represents a generic volume resource that is provisioned/attached using a exec based plugin. This is an alpha feature and may change in future.
+    /// </summary>
+    /// <value>FlexVolume represents a generic volume resource that is provisioned/attached using a exec based plugin. This is an alpha feature and may change in future.</value>
+    [DataMember(Name="flexVolume", EmitDefaultValue=false)]
+    public V1FlexVolumeSource FlexVolume { get; set; }
+
+    
+    /// <summary>
+    /// AzureFile represents an Azure File Service mount on the host and bind mount to the pod.
+    /// </summary>
+    /// <value>AzureFile represents an Azure File Service mount on the host and bind mount to the pod.</value>
+    [DataMember(Name="azureFile", EmitDefaultValue=false)]
+    public V1AzureFileVolumeSource AzureFile { get; set; }
+
+    
+    /// <summary>
     /// AccessModes contains all ways the volume can be mounted. More info: http://releases.k8s.io/HEAD/docs/user-guide/persistent-volumes.md#access-modes
     /// </summary>
     /// <value>AccessModes contains all ways the volume can be mounted. More info: http://releases.k8s.io/HEAD/docs/user-guide/persistent-volumes.md#access-modes</value>
@@ -165,6 +181,10 @@ namespace KubeNET.Swagger.Model {
       sb.Append("  Fc: ").Append(Fc).Append("\n");
       
       sb.Append("  Flocker: ").Append(Flocker).Append("\n");
+      
+      sb.Append("  FlexVolume: ").Append(FlexVolume).Append("\n");
+      
+      sb.Append("  AzureFile: ").Append(AzureFile).Append("\n");
       
       sb.Append("  AccessModes: ").Append(AccessModes).Append("\n");
       

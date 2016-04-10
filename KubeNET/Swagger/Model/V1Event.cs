@@ -93,6 +93,14 @@ namespace KubeNET.Swagger.Model {
     public int? Count { get; set; }
 
     
+    /// <summary>
+    /// Type of this event (Normal, Warning), new types could be added in the future
+    /// </summary>
+    /// <value>Type of this event (Normal, Warning), new types could be added in the future</value>
+    [DataMember(Name="type", EmitDefaultValue=false)]
+    public string Type { get; set; }
+
+    
 
     /// <summary>
     /// Get the string presentation of the object
@@ -121,6 +129,8 @@ namespace KubeNET.Swagger.Model {
       sb.Append("  LastTimestamp: ").Append(LastTimestamp).Append("\n");
       
       sb.Append("  Count: ").Append(Count).Append("\n");
+      
+      sb.Append("  Type: ").Append(Type).Append("\n");
       
       sb.Append("}\n");
       return sb.ToString();

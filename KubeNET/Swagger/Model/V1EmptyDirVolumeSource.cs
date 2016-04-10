@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 namespace KubeNET.Swagger.Model {
 
   /// <summary>
-  /// EmptyDirVolumeSource is temporary directory that shares a pod&#39;s lifetime.
+  /// Represents an empty directory for a pod. Empty directory volumes support ownership management and SELinux relabeling.
   /// </summary>
   [DataContract]
   public class V1EmptyDirVolumeSource {

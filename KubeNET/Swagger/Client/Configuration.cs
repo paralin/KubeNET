@@ -17,7 +17,7 @@ namespace KubeNET.Swagger.Client
         /// Version of the package.
         /// </summary>
         /// <value>Version of the package.</value>
-        public const string Version = "0e182d4";
+        public const string Version = "c6a5844";
   
         /// <summary>
         /// Gets or sets the default API client for making HTTP calls.
@@ -91,7 +91,7 @@ namespace KubeNET.Swagger.Client
                      .GetReferencedAssemblies()
                      .Where(x => x.Name == "System.Core").First().Version.ToString()  + "\n";
             report += "    Version of the API: 1.0.0\n";
-            report += "    SDK Package Version: 0e182d4\n";
+            report += "    SDK Package Version: c6a5844\n";
   
             return report;
         }

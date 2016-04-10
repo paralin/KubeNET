@@ -22,6 +22,14 @@ namespace KubeNET.Swagger.Model {
 
     
     /// <summary>
+    /// The number of pods that have labels matching the labels of the pod template of the replication controller.
+    /// </summary>
+    /// <value>The number of pods that have labels matching the labels of the pod template of the replication controller.</value>
+    [DataMember(Name="fullyLabeledReplicas", EmitDefaultValue=false)]
+    public int? FullyLabeledReplicas { get; set; }
+
+    
+    /// <summary>
     /// ObservedGeneration reflects the generation of the most recently observed replication controller.
     /// </summary>
     /// <value>ObservedGeneration reflects the generation of the most recently observed replication controller.</value>
@@ -39,6 +47,8 @@ namespace KubeNET.Swagger.Model {
       sb.Append("class V1ReplicationControllerStatus {\n");
       
       sb.Append("  Replicas: ").Append(Replicas).Append("\n");
+      
+      sb.Append("  FullyLabeledReplicas: ").Append(FullyLabeledReplicas).Append("\n");
       
       sb.Append("  ObservedGeneration: ").Append(ObservedGeneration).Append("\n");
       

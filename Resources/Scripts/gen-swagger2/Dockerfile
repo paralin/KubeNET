@@ -1,4 +1,4 @@
-FROM node:4.2.1
+FROM node:5.10.1
 
 WORKDIR /usr/src
 ADD convert.js package.json generate.sh /usr/src/

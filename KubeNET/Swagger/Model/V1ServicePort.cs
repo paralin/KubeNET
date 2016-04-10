@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 namespace KubeNET.Swagger.Model {
 
   /// <summary>
-  /// ServicePort conatins information on service&#39;s port.
+  /// ServicePort contains information on service&#39;s port.
   /// </summary>
   [DataContract]
   public class V1ServicePort {
@@ -38,9 +38,9 @@ namespace KubeNET.Swagger.Model {
 
     
     /// <summary>
-    /// Number or name of the port to access on the pods targeted by the service. Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME. If this is a string, it will be looked up as a named port in the target Pod's container ports. If this is not specified, the value of Port is used (an identity map). Defaults to the service port. More info: http://releases.k8s.io/HEAD/docs/user-guide/services.md#defining-a-service
+    /// Number or name of the port to access on the pods targeted by the service. Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME. If this is a string, it will be looked up as a named port in the target Pod's container ports. If this is not specified, the value of the 'port' field is used (an identity map). This field is ignored for services with clusterIP=None, and should be omitted or set equal to the 'port' field. More info: http://releases.k8s.io/HEAD/docs/user-guide/services.md#defining-a-service
     /// </summary>
-    /// <value>Number or name of the port to access on the pods targeted by the service. Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME. If this is a string, it will be looked up as a named port in the target Pod's container ports. If this is not specified, the value of Port is used (an identity map). Defaults to the service port. More info: http://releases.k8s.io/HEAD/docs/user-guide/services.md#defining-a-service</value>
+    /// <value>Number or name of the port to access on the pods targeted by the service. Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME. If this is a string, it will be looked up as a named port in the target Pod's container ports. If this is not specified, the value of the 'port' field is used (an identity map). This field is ignored for services with clusterIP=None, and should be omitted or set equal to the 'port' field. More info: http://releases.k8s.io/HEAD/docs/user-guide/services.md#defining-a-service</value>
     [DataMember(Name="targetPort", EmitDefaultValue=false)]
     public string TargetPort { get; set; }
 

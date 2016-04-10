@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 namespace KubeNET.Swagger.Model {
 
   /// <summary>
-  /// GlusterfsVolumeSource represents a Glusterfs Mount that lasts the lifetime of a pod.
+  /// Represents a Glusterfs mount that lasts the lifetime of a pod. Glusterfs volumes do not support ownership management or SELinux relabeling.
   /// </summary>
   [DataContract]
   public class V1GlusterfsVolumeSource {
