@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>KubeNET</id>
-        <version>0.3.0</version>
+        <version>0.4.0</version>
         <title>KubeNET</title>
         <authors>paralin</authors>
         <licenseUrl>https://github.com/paralin/KubeNET/blob/master/KubeNET/license.txt</licenseUrl>
@@ -11,11 +11,11 @@
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>A .net client for the Kubernetes API.</description>
         <summary />
-        <releaseNotes>Release notes are available at https://github.com/paralin/KubeNET/releases/tag/0.3.0</releaseNotes>
+        <releaseNotes>Release notes are available at https://github.com/paralin/KubeNET/releases/tag/0.4.0</releaseNotes>
         <copyright />
         <tags>kube kubenet kubernetes client api</tags>
         <dependencies>
-            <dependency id="Newtonsoft.Json" version="[6.0.8, 8.0.0)" />
+            <dependency id="Newtonsoft.Json" version="[9.0.0, 10.0.0)" />
             <dependency id="RestSharp" version="[105.2.0, 105.3.0]" />
         </dependencies>
     </metadata>
